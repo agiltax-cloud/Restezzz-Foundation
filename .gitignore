@@ -1,0 +1,31 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# WordPress core/runtime
+/wp-admin/
+/wp-includes/
+/wp-*.php
+/index.php
+/license.txt
+/readme.html
+/xmlrpc.php
+
+# Runtime content
+wp-content/uploads/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/backups/
+wp-content/ai1wm-backups/
+wp-content/debug.log
+
+# Server/local
+.htaccess
+*.log
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+node_modules/
+vendor/
