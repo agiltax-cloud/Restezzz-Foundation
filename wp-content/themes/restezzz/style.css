@@ -1,0 +1,21 @@
+/*
+Theme Name: Rest Ezzz Foundation
+Theme URI: https://restezzzfoundation.org/
+Author: Rest Ezzz Foundation
+Description: Custom accessible WordPress theme for Rest Ezzz Foundation.
+Version: 0.1.0
+Text Domain: restezzz
+Requires at least: 6.6
+Requires PHP: 8.2
+*/
+
+:root {
+  --re-content: 72rem;
+  --re-space: clamp(1rem, 2vw, 2rem);
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.6; }
+a { color: inherit; }
+.re-container { width: min(calc(100% - 2rem), var(--re-content)); margin-inline: auto; }
+.skip-link { position: absolute; left: -9999px; }
+.skip-link:focus { left: 1rem; top: 1rem; z-index: 9999; background: #fff; padding: .75rem 1rem; }
