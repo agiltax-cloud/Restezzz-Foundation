@@ -32,11 +32,13 @@ REST EZZZ FOUNDATION
 │
 ├── COMMUNITY
 │   ├── Community Outreach
+│   ├── Acts of Compassion
 │   ├── Events
 │   ├── Stories & Impact
 │   └── Community Partners
 │
 ├── GET INVOLVED
+│   ├── Take an Act of Compassion
 │   ├── Volunteer
 │   ├── Partner With Us
 │   ├── Provide a Service / Resource
@@ -66,6 +68,7 @@ HOME
 │   └── Referral Partners → Referral Information → Refer a Young Adult
 │
 └── I WANT TO HELP
+    ├── Acts of Compassion → Choose One Practical Action → Participate
     └── Get Involved → Volunteer / Partner / Provide a Service / Donate
 ```
 
@@ -113,6 +116,12 @@ Food • Basic Needs • Outreach • Events
 
         ↓
 
+[ ACTS OF COMPASSION ]
+A Meal • A Haircut • A Blanket • A Skill • A Resource • A Connection
+[ Take an Act of Compassion ]
+
+        ↓
+
 [ GET INVOLVED ]
 Volunteer • Provide a Service • Partner • Fundraise
 
@@ -127,6 +136,26 @@ Volunteer • Provide a Service • Partner • Fundraise
         ↓
 
 [ CONTACT / FOOTER ]
+```
+
+## Acts of Compassion model
+
+```text
+                         ACTS OF COMPASSION
+                                 │
+          ┌──────────────────────┼──────────────────────┐
+          ▼                      ▼                      ▼
+      GIVE TIME              GIVE A SKILL          GIVE A RESOURCE
+          │                      │                      │
+          ▼                      ▼                      ▼
+     Outreach/help        Haircut/pro service     Meal/blanket/item
+          │                      │                      │
+          └──────────────────────┼──────────────────────┘
+                                 ▼
+                       PRACTICAL HUMAN HELP
+                                 │
+                                 ▼
+                         SOMEONE MOVES FORWARD
 ```
 
 ## Program architecture
@@ -151,6 +180,7 @@ RESOURCE NAVIGATION → "If we don't have the resource, help find it."
 WORDPRESS
 ├── Pages
 ├── Programs
+├── Acts of Compassion
 ├── Community Events
 ├── Partners / Resource Providers
 ├── Stories / Impact
@@ -171,11 +201,13 @@ P0 / LAUNCH
 ├── Entrepreneurship
 ├── Mentorship
 ├── Referral Partner Flow
+├── Acts of Compassion landing section / CTA
 ├── About / Founder Story
 ├── Donate
 └── Contact
 
 P1 / NEXT
+├── Acts of Compassion opportunity/story archive
 ├── Community Outreach
 ├── Events
 ├── Partners
@@ -190,7 +222,7 @@ HOLD / VERIFY
 ```
 
 ## Strategic source
-Based primarily on the September 28, 2026 founder interview, supported by archive and public-source research.
+Based primarily on the September 28, 2026 founder interview, supported by archive and public-source research, plus current Foundation planning decisions.
 - `research/SOURCE-INTERVIEW-2026-09-28.md`
 - `research/FOUNDER-INTERVIEW-DECOMPOSITION.md`
 - `IA-JJG.md`
