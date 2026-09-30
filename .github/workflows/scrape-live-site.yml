@@ -11,7 +11,7 @@ on:
       - '.github/workflows/scrape-live-site.yml'
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   scrape:
@@ -223,3 +223,28 @@ jobs:
           path: live-site-scrape/
           if-no-files-found: error
           retention-days: 7
+
+
+      - name: Commit current live-site snapshot
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        shell: bash
+        run: |
+          mkdir -p docs/research/live-site-snapshot
+          cp live-site-scrape/LIVE-SITE-CONTENT.md docs/research/live-site-snapshot/LIVE-SITE-CONTENT.md
+          cp live-site-scrape/pages.json docs/research/live-site-snapshot/pages.json
+          cp live-site-scrape/wp-pages.json docs/research/live-site-snapshot/wp-pages.json
+          cp live-site-scrape/wp-media.json docs/research/live-site-snapshot/wp-media.json
+          cp live-site-scrape/crawl-status.json docs/research/live-site-snapshot/crawl-status.json
+          cp live-site-scrape/discovered-urls.txt docs/research/live-site-snapshot/discovered-urls.txt
+          cp live-site-scrape/social-links.txt docs/research/live-site-snapshot/social-links.txt
+          cp live-site-scrape/image-refs.json docs/research/live-site-snapshot/image-refs.json
+          if [ -f live-site-scrape/wp-give-forms.json ]; then cp live-site-scrape/wp-give-forms.json docs/research/live-site-snapshot/wp-give-forms.json; fi
+          if [ -f live-site-scrape/give-form-1207.json ]; then cp live-site-scrape/give-form-1207.json docs/research/live-site-snapshot/give-form-1207.json; fi
+          if [ -f live-site-scrape/give-form-1207-view.html ]; then cp live-site-scrape/give-form-1207-view.html docs/research/live-site-snapshot/give-form-1207-view.html; fi
+
+          git config user.name "restezzz-build-agent"
+          git config user.email "actions@github.com"
+          git add docs/research/live-site-snapshot
+          git diff --cached --quiet && exit 0
+          git commit -m "Update live-site content snapshot"
+          git push
