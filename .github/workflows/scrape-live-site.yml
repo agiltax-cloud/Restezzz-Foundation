@@ -60,7 +60,10 @@ jobs:
               "wp-json.json": urljoin(ROOT, "wp-json/"),
               "wp-pages.json": urljoin(ROOT, "wp-json/wp/v2/pages?per_page=100&_embed"),
               "wp-posts.json": urljoin(ROOT, "wp-json/wp/v2/posts?per_page=100&_embed"),
-              "wp-media.json": urljoin(ROOT, "wp-json/wp/v2/media?per_page=100"),\n              "wp-give-forms.json": urljoin(ROOT, "wp-json/wp/v2/give_forms?per_page=100"),\n              "give-form-1207.json": urljoin(ROOT, "wp-json/wp/v2/give_forms/1207"),\n              "give-form-1207-view.html": urljoin(ROOT, "?givewp-route=donation-form-view&form-id=1207"),
+              "wp-media.json": urljoin(ROOT, "wp-json/wp/v2/media?per_page=100"),
+              "wp-give-forms.json": urljoin(ROOT, "wp-json/wp/v2/give_forms?per_page=100"),
+              "give-form-1207.json": urljoin(ROOT, "wp-json/wp/v2/give_forms/1207"),
+              "give-form-1207-view.html": urljoin(ROOT, "?givewp-route=donation-form-view&form-id=1207"),
           }
 
           status = {}
