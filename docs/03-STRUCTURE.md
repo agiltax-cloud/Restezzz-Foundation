@@ -1,75 +1,101 @@
 # Plane 3 — Structure
 
 ## Primary navigation
-Get Support | Programs | About | Community | Get Involved | Donate
+**Get Support | Programs | Community | Get Involved | About | Donate**
 
-Contact may appear in the utility/header/footer rather than consuming a primary-nav slot on desktop.
+Contact may appear in utility/header/footer.
 
-## Proposed sitemap
+## Integrated sitemap
+
 Home
 - Get Support
-  - I'm Aging Out / Recently Aged Out
+  - Young Adult Transition Support
+  - Family Relief & Loss Support
+  - Community / Emergency Resource Help
   - How Support Works
   - Request Support
-  - Frequently Asked Questions
+  - Refer Someone
+  - FAQ
 - Programs
-  - Transition Support
-  - Life Skills & Financial Foundations
-  - Housing & Resource Navigation
-  - Employment & Job Readiness
-  - Entrepreneurship Guidance
-  - Mentorship
-- For Referral Partners
-  - Schools
-  - Social Workers / Youth Professionals
-  - Refer a Young Adult
+  - Transition to Independence
+    - Housing & Resource Navigation
+    - Money & Banking Foundations
+    - Employment & Job Readiness
+    - Entrepreneurship Guidance
+    - Life Skills & Goal Planning
+    - Mentorship
+  - Family Relief & Loss Support
+    - Funeral-Expense Relief*
+    - Insurance / Benefit Navigation*
+    - Financial Relief*
+    - Funeral-Process Navigation*
+  - Community Outreach
+    - Food & Essentials
+    - Clothing / Shoes / Hygiene
+    - Neighborhood Projects
+    - Emergency / Disaster Outreach
 - Community
-  - Outreach
   - Acts of Compassion
-  - Events
-  - Stories / Impact
-  - Partners
+  - Causes & Events
+  - Stories & Impact
+  - Community Partners
 - Get Involved
   - Take an Act of Compassion
   - Volunteer
-  - Partner With Us
-  - Provide a Service / Resource
+  - Sponsor / Partner
+  - Donate Goods or Services
   - Fundraise
+  - Vendor Opportunities
 - About
   - Who We Are
+  - Mission & Vision
   - Why Rest Ezzz
   - Founder Story
-  - Mission & Values
+  - Values
+  - Transparency / Accountability
 - Donate
 - Contact
 - Privacy
 - Accessibility
+- Donation utility pages as needed
+
+`*` Active program status must be confirmed.
 
 ## Core journeys
 
 ### Young adult
-Home → Get Support → What We Help With → How It Works → Request Support / Talk to Someone
+Home → Get Support → Transition Support → How It Works → Request Support / Talk to Someone
+
+### Family in loss/crisis
+Home → Get Support → Family Relief & Loss Support → eligibility/process → Request Support
+
+### Community-resource need
+Home → Get Support → Community / Emergency Help → Contact / Resource Navigation
 
 ### Referral partner
-Home → For Referral Partners → What Rest Ezzz Provides → Referral Criteria → Refer / Contact
+Home → Get Support → Refer Someone → referral information → Submit / Contact
 
 ### Compassion participant
-Home → Acts of Compassion → Choose a practical way to help → Participate / Contribute / Contact
+Home → Acts of Compassion → choose a practical action → participate
 
-### Volunteer/service partner
-Home → Get Involved → Choose role/resource → Inquiry
+### Sponsor / service provider
+Home → Get Involved → Sponsor / Partner / Goods / Services → inquiry
 
 ### Donor
-Home → Mission/Impact → Donate
+Home → Impact / Programs → Donate
 
-### Community outreach participant
-Home/Community → Outreach / Acts of Compassion / Event → Participate / Volunteer / Partner
+## Legacy URL mapping baseline
+- `/about-2/` → `/about/`
+- `/journal/` → `/contact/`
+- `/sponsor/` → `/get-involved/sponsor-partner/`
+- `/causes/` → `/community/causes-events/`
+- Sparkle URLs → one canonical Sparkle event page
+- `/sample-page/` → retire
+- `/author/admin/` → disable/noindex/redirect
 
 ## Interaction model
-- Use progressive disclosure for complex support information.
-- Keep the first support inquiry lightweight.
-- Separate "Request Support" from a full application unless a full application is truly required.
-- Make human contact visible throughout support pages.
-- Allow a referral partner to start a referral without pretending the site knows eligibility before review.
-- Make Acts of Compassion easy to enter without requiring a long-term volunteer commitment.
-- Do not mix donation pressure into the support flow.
+- Need-based navigation before organizational jargon.
+- Lightweight first inquiry.
+- Human contact visible.
+- Do not pressure support-seekers with donation messaging.
+- Reuse the current site's flexible participation options across Acts of Compassion and events.
