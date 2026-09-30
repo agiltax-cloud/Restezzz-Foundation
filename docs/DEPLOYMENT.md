@@ -1,43 +1,45 @@
 # OVH VPS Deployment Contract
 
 ## Target
-Production WordPress website for `restezzzfoundation.org` on the new OVH VPS, fronted by Cloudflare.
+Production WordPress for `restezzzfoundation.org` on the new OVH VPS behind Cloudflare.
 
-## Authoritative handoff
-The build/deployment agent must read and follow `docs/BUILD-AGENT-HANDOFF.md` before provisioning, deployment, or DNS changes.
+## Current production
+The current site at `162.0.238.22` is live. Preserve it as production/rollback until OVH migration is validated.
 
-## Build-agent responsibilities
-1. Provision a supported PHP release, PHP-FPM, MariaDB/MySQL, and Nginx or Apache on OVH.
-2. Install current WordPress core outside Git-managed theme content.
-3. Configure production secrets on the server; never write credentials into this repository.
-4. Deploy `wp-content/themes/restezzz` from this repository.
-5. Create writable persistent `wp-content/uploads`.
-6. Activate the `restezzz` theme.
-7. Set HTTPS canonical URLs to `https://restezzzfoundation.org`.
-8. Configure valid TLS on the OVH origin.
-9. Keep Cloudflare as the public DNS/proxy layer.
-10. **Use Cloudflare `cf` CLI to inspect, snapshot, dry-run where supported, and mutate production web DNS.**
-11. Update the apex web A record from the legacy origin `162.0.238.22` to the validated OVH origin only after origin QA passes.
-12. Preserve `www` → apex behavior and Cloudflare proxying.
-13. Do not modify MX/TXT/mail/service records as part of the website cutover.
-14. Run backups before deployment changes and maintain database + uploads backups independently of Git.
-15. Retain the legacy origin as rollback/recovery until explicitly approved for retirement.
+Before cutover:
+- DB backup
+- uploads backup
+- donor/GiveWP data backup
+- current live-site snapshot
+- current DNS snapshot
 
-## Cloudflare automation credentials
-For non-interactive agent/CI use, supply Cloudflare credentials through environment variables such as:
+## Responsibilities
+1. Provision/harden OVH.
+2. Install supported web/PHP/database stack.
+3. Keep secrets outside Git.
+4. Deploy custom `restezzz` theme.
+5. Create persistent uploads.
+6. Migrate approved content/media using migration matrix.
+7. Migrate/configure donation runtime/data deliberately.
+8. Configure canonical HTTPS + TLS.
+9. Keep Cloudflare proxy.
+10. Use Cloudflare `cf` CLI for DNS inventory, backup, dry-run where supported, cutover and rollback.
+11. Leave unrelated mail/service DNS alone.
+12. Retain old production until explicit retirement approval.
+
+## Cloudflare secrets
+Use environment/secret-manager values only:
 - `CLOUDFLARE_API_TOKEN`
 - `CLOUDFLARE_ACCOUNT_ID`
 - `CLOUDFLARE_ZONE_ID`
 
-Never commit those values.
-
-## Do not overwrite
-- Production database
-- `wp-content/uploads`
+## Do not overwrite/discard
+- production DB
+- donor records
+- uploads
 - server secrets
 - TLS/private keys
-- legacy recovery data
-- unrelated Cloudflare DNS records
+- current-origin backups
+- unrelated DNS
 
-## Release principle
-Git contains reproducible application/theme code and documentation. WordPress content, media and secrets persist on the server/database. Production DNS is managed deliberately through Cloudflare `cf` CLI under the cutover/rollback procedure in `docs/BUILD-AGENT-HANDOFF.md`.
+Git contains code/planning/non-sensitive migration evidence. Operational WordPress data remains persistent infrastructure state.
