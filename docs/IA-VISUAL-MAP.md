@@ -145,7 +145,7 @@ All programs are supported by:
 RESOURCE NAVIGATION → "If we don't have the resource, help find it."
 ```
 
-## Content model in WordPress
+## WordPress content model
 
 ```text
 WORDPRESS
@@ -158,7 +158,7 @@ WORDPRESS
 └── FAQs
 ```
 
-## Content priority
+## Priority
 
 ```text
 P0 / LAUNCH
@@ -190,7 +190,7 @@ HOLD / VERIFY
 ```
 
 ## Strategic source
-This architecture is based primarily on the September 28, 2026 founder interview, supported by archive and public-source research. See:
+Based primarily on the September 28, 2026 founder interview, supported by archive and public-source research.
 - `research/SOURCE-INTERVIEW-2026-09-28.md`
 - `research/FOUNDER-INTERVIEW-DECOMPOSITION.md`
 - `IA-JJG.md`
