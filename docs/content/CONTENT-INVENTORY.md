@@ -17,6 +17,8 @@
 | Ongoing mentorship | founder interview | boundaries/capacity needed | P0 |
 | Get Support workflow | UX requirement + founder interview | operational workflow needed | P0 |
 | Referral-partner flow | founder interview | criteria/process needed | P0 |
+| Acts of Compassion landing section/CTA | current Foundation decision + founder compassion/outreach themes | define launch opportunities | P0 |
+| Acts of Compassion opportunity/story archive | current Foundation decision | content model + moderation/consent needed | P1 |
 | Community outreach | founder interview + archive | current cadence/details needed | P1 |
 | Food/basic-needs outreach | founder interview | current schedule/geography needed | P1 |
 | Partners/service network | founder interview + archive | confirm current partners | P1 |
