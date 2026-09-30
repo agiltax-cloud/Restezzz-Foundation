@@ -1,46 +1,119 @@
 # Evidence Register
 
 ## E-001 Historical website architecture
-State: Recovered. Source: Internet Archive URL-prefix inventory supplied from Wayback. Evidence: 26 captured entries: one HTML homepage and supporting visual/frontend assets; homepage captures Jan 2024–Jul 2025.
+**State:** Recovered historical.  
+Wayback inventory showed a largely single-page Rest Ezzz site plus supporting logos/images/frontend assets, with captures spanning 2024–2025.
 
 ## E-002 Historical section concepts
-State: Recovered. Source: archived first-party filenames. Evidence: who_we_are, relief, process, partner, campaigns, community, fundraise, volunteer, donate, hero_home.
+**State:** Recovered historical.  
+Archived first-party filenames support concepts including Who We Are, Relief, Process, Partner, Campaigns, Community, Fundraise, Volunteer and Donate.
 
-## E-003 Historical/partner program description
-State: Corroborated. Source: Saturated In His Love partner directory. Evidence: Rest Ezzz described as providing scholarships for funeral expenses and insurance assistance. URL: https://saturatedinhislove.com/about/partners/
-Caution: third-party description; current program status is not confirmed and this should not define the new IA by itself.
+## E-003 Loss-support partner description
+**State:** Corroborated.  
+Saturated In His Love's partner directory describes Rest Ezzz as providing scholarships for funeral expenses and insurance assistance.
 
-## E-004 Nonprofit/community-foundation listing
-State: Corroborated. Evidence: public nonprofit directories list Rest Ezzz Foundation in Orange, CA as a charitable organization/community foundation. Verify official IRS/state records before publishing legal/tax claims.
+Use: corroborates that current live-site funeral/insurance messaging is not only template text. Exact current eligibility/process still requires Foundation confirmation.
+
+## E-004 Nonprofit/public listing
+**State:** Corroborated, not official legal verification.  
+Public nonprofit directories list Rest Ezzz Foundation as a charitable/community foundation.
+
+Use official Foundation/IRS records before publishing final legal/tax wording.
 
 ## E-005 California corporate identity
-State: Corroborated. Evidence: directory reflecting state corporate data reports REST EZZZ FOUNDATION, corporation ID 4694436, incorporated 2021-01-26, active, Lucy Andrade as agent. Recheck official state source before launch.
+**State:** Corroborated directory data.  
+Public corporate-directory data reports REST EZZZ FOUNDATION, corporation ID 4694436, incorporated 2021-01-26, active, with Lucy Andrade listed as agent in historical data.
 
-## E-006 2026 community activity
-State: Corroborated/high authority. Source: City of Orange final council minutes, Feb. 24, 2026. Evidence: Rest Ezzz Foundation listed as first alternate in safe-and-sane fireworks permit lottery.
+Official state verification remains preferable for final legal copy.
 
-## E-007 Historical origin
-State: Technical evidence. Evidence: 162.0.238.22 maps to server1.msofthost.com and is associated with restezzzfoundation.org. Recovery use only.
+## E-006 2026 City of Orange activity
+**State:** Corroborated / high authority.  
+City of Orange final council minutes, February 24, 2026, list Rest Ezzz Foundation as an alternate organization in the safe-and-sane fireworks permit lottery.
 
-## E-008 Founder interview — strategic source
-State: First-party/current planning evidence.
-Source: RestEzzz_20260928_153610.m4a, recorded September 28, 2026; automated transcript produced in Descript.
-Source doc: research/SOURCE-INTERVIEW-2026-09-28.md
+## E-007 Current production origin
+**State:** Technical first-party/project evidence.  
+Current production web origin is/has been `162.0.238.22`, associated with `server1.msofthost.com`.
 
-Evidence:
-- founder states the main reason for starting Rest Ezzz was to help young people transition out of foster care
-- describes practical support around housing/resources, banking, financial decisions, jobs, W-4/W-2 basics, entrepreneurship, goal planning and ongoing mentorship
-- describes individualized planning rather than one prescribed path
-- describes continued mentor relationships after transition
-- identifies schools/social workers/community channels as outreach/referral relationships
-- describes community outreach with food, blankets/basic needs and possible recurring neighborhood service
-- identifies partner opportunities including barbers, restaurants and local businesses
+The origin is currently live again and must be preserved through OVH migration/cutover.
 
-Caution:
-The same interview includes personal claims about foster parents, social workers, program restrictions and causes of homelessness. These are not independently verified and must not be published as categorical facts without research.
+## E-008 Founder interview — September 28, 2026
+**State:** First-party current planning evidence.  
+Source: `RestEzzz_20260928_153610.m4a`, automated transcript in Descript.
+
+Key evidence:
+- founder says a main reason for starting Rest Ezzz was helping young people transition out of foster care
+- describes housing/resource navigation
+- financial decisions, bank accounts, W-4/W-2 basics
+- job search
+- entrepreneurship guidance
+- goal/transition planning
+- ongoing mentorship
+- schools/social workers/community as referral/outreach channels
+- community outreach with food/basic needs
+- partner opportunities such as barbers/restaurants/businesses
+
+Caution: personal claims in the interview about foster parents, social workers, program restrictions or causes of homelessness are not independently verified and should not be published categorically.
+
+## E-009 Restored live website — September 30, 2026
+**State:** Live first-party published evidence.  
+Snapshot: `research/live-site-snapshot/`  
+Audit: `research/LIVE-SITE-AUDIT-2026-09-30.md`
+
+Current public site evidence includes:
+- outreach-nonprofit identity
+- "Rest on us…" branding
+- funeral-expense relief
+- life-insurance assistance
+- financial aid for families coping with loss
+- food drives
+- clothing/shoe donations
+- spiritual guidance
+- sponsorship/fundraising
+- causes/events
+- current contact details
+- current GiveWP donation infrastructure
+
+Important distinction: "currently published" does not equal "confirmed operationally current."
+
+## E-010 Embedded Rest Ezzz social activity
+**State:** Live first-party social evidence captured from the production homepage.  
+Source: embedded `@rest.ezzz` feed, January–March 2025.  
+See `research/LIVE-SITE-SOCIAL-EVIDENCE.md`.
+
+Evidence supports:
+- food/hygiene distribution
+- emergency groceries
+- clothing/shoes/backpacks/books
+- Santa Ana street outreach
+- Anaheim beautification
+- garden project
+- LA fire response
+- volunteer recruitment
+- fundraising
+- partner collaboration
+
+This strongly supports Community Outreach and Acts of Compassion as authentic Rest Ezzz work.
+
+## E-011 California foster-transition context
+**State:** Authoritative public source.  
+California Department of Social Services documents:
+- Extended Foster Care through age 21 for eligible youth
+- Independent Living Program services
+- transitional housing programs
+- housing, life-skills and guidance needs during transition to adulthood
+
+Use these sources for general educational/resource content. Do not imply Rest Ezzz is a state/county program or substitute for statutory benefits.
 
 ## Strategic evidence precedence
-For current positioning and IA, E-008 has greater weight than older third-party descriptions because it is a recent first-party founder source. Historical and corroborated material remains useful for continuity, recovery and verification.
+For the rebuilt site:
+
+1. current Foundation-approved operating information
+2. current founder strategic direction
+3. current live first-party published content
+4. current first-party social activity
+5. authoritative/corroborating public sources
+6. historical archive
+7. reconstructed UX/copy
 
 ## Rule
-A factual claim in production content must map to an evidence ID or be explicitly approved by the Foundation as current first-party information.
+Every substantive public claim should have an evidence source or explicit current Foundation approval. Money, eligibility, tax, insurance, medical, legal, donation and service-capacity claims require heightened verification.
