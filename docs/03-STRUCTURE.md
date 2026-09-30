@@ -25,10 +25,12 @@ Home
   - Refer a Young Adult
 - Community
   - Outreach
+  - Acts of Compassion
   - Events
   - Stories / Impact
   - Partners
 - Get Involved
+  - Take an Act of Compassion
   - Volunteer
   - Partner With Us
   - Provide a Service / Resource
@@ -51,6 +53,9 @@ Home → Get Support → What We Help With → How It Works → Request Support 
 ### Referral partner
 Home → For Referral Partners → What Rest Ezzz Provides → Referral Criteria → Refer / Contact
 
+### Compassion participant
+Home → Acts of Compassion → Choose a practical way to help → Participate / Contribute / Contact
+
 ### Volunteer/service partner
 Home → Get Involved → Choose role/resource → Inquiry
 
@@ -58,7 +63,7 @@ Home → Get Involved → Choose role/resource → Inquiry
 Home → Mission/Impact → Donate
 
 ### Community outreach participant
-Home/Community → Upcoming outreach/event → Volunteer / Partner / Contact
+Home/Community → Outreach / Acts of Compassion / Event → Participate / Volunteer / Partner
 
 ## Interaction model
 - Use progressive disclosure for complex support information.
@@ -66,4 +71,5 @@ Home/Community → Upcoming outreach/event → Volunteer / Partner / Contact
 - Separate "Request Support" from a full application unless a full application is truly required.
 - Make human contact visible throughout support pages.
 - Allow a referral partner to start a referral without pretending the site knows eligibility before review.
+- Make Acts of Compassion easy to enter without requiring a long-term volunteer commitment.
 - Do not mix donation pressure into the support flow.
