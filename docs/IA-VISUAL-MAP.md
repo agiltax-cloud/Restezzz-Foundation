@@ -1,177 +1,152 @@
-# Rest Ezzz — Visual IA / Content Map
-
-This is the high-level visual blueprint for the current website restructuring baseline.
+# Rest Ezzz — Integrated Visual IA / Content Map
 
 ```text
-REST EZZZ FOUNDATION
+                           REST EZZZ FOUNDATION
+                                  │
+             ┌────────────────────┼────────────────────┐
+             │                    │                    │
+             ▼                    ▼                    ▼
+      TRANSITION TO          FAMILY RELIEF        COMMUNITY OUTREACH
+      INDEPENDENCE           & LOSS SUPPORT       + COMPASSION
+             │                    │                    │
+             └────────────────────┼────────────────────┘
+                                  ▼
+                           RESOURCE NETWORK
+                    sponsors • partners • donors
+                    volunteers • vendors • services
+```
+
+## Final high-level sitemap
+
+```text
+REST EZZZ
 │
 ├── HOME
-│
 ├── GET SUPPORT
-│   ├── I'm Aging Out / Recently Aged Out
-│   ├── What Can Rest Ezzz Help With?
+│   ├── Young Adult Transition Support
+│   ├── Family Relief & Loss Support
+│   ├── Community / Emergency Resource Help
 │   ├── How Support Works
 │   ├── Request Support
+│   ├── Refer Someone
 │   └── FAQ
-│
 ├── PROGRAMS
-│   ├── Transition Support
-│   ├── Housing & Resource Navigation
-│   ├── Money & Banking Foundations
-│   ├── Employment & Job Readiness
-│   ├── Entrepreneurship Guidance
-│   ├── Life Skills
-│   ├── Goal / Transition Planning
-│   └── Ongoing Mentorship
-│
-├── FOR REFERRAL PARTNERS
-│   ├── Schools
-│   ├── Social Workers / Youth Professionals
-│   ├── How Rest Ezzz Can Help
-│   └── Refer a Young Adult
-│
+│   ├── Transition to Independence
+│   │   ├── Housing & Resource Navigation
+│   │   ├── Money & Banking Foundations
+│   │   ├── Employment & Job Readiness
+│   │   ├── Entrepreneurship Guidance
+│   │   ├── Life Skills & Goal Planning
+│   │   └── Mentorship
+│   ├── Family Relief & Loss Support
+│   │   ├── Funeral-Expense Relief*
+│   │   ├── Insurance / Benefit Navigation*
+│   │   ├── Financial Relief*
+│   │   └── Funeral-Process Navigation*
+│   └── Community Outreach
+│       ├── Food & Essentials
+│       ├── Clothing / Shoes / Hygiene
+│       ├── Neighborhood Projects
+│       └── Emergency / Disaster Outreach
 ├── COMMUNITY
-│   ├── Community Outreach
 │   ├── Acts of Compassion
-│   ├── Events
+│   ├── Causes & Events
 │   ├── Stories & Impact
 │   └── Community Partners
-│
 ├── GET INVOLVED
 │   ├── Take an Act of Compassion
 │   ├── Volunteer
-│   ├── Partner With Us
-│   ├── Provide a Service / Resource
-│   └── Fundraise
-│
+│   ├── Sponsor / Partner
+│   ├── Donate Goods or Services
+│   ├── Fundraise
+│   └── Vendor Opportunities
 ├── ABOUT
 │   ├── Who We Are
+│   ├── Mission & Vision
 │   ├── Why Rest Ezzz
 │   ├── Founder Story
-│   ├── Mission
-│   └── Values
-│
+│   ├── Values
+│   └── Transparency / Accountability
 ├── DONATE
 ├── CONTACT
 ├── PRIVACY
 └── ACCESSIBILITY
 ```
 
-## Primary user paths
+`*` Confirm active program status before launch.
+
+## Primary paths
 
 ```text
 HOME
 ├── I NEED SUPPORT
-│   └── Get Support → What We Help With → How It Works → Request Support
-│
+│   ├── Transitioning from Foster Care
+│   ├── Family / Loss Support
+│   └── Community / Emergency Help
 ├── I KNOW SOMEONE WHO NEEDS HELP
-│   └── Referral Partners → Referral Information → Refer a Young Adult
-│
+│   └── Refer Someone
 └── I WANT TO HELP
-    ├── Acts of Compassion → Choose One Practical Action → Participate
-    └── Get Involved → Volunteer / Partner / Provide a Service / Donate
+    ├── Take an Act of Compassion
+    ├── Volunteer
+    ├── Sponsor / Partner
+    ├── Give Goods / Services
+    └── Donate
 ```
 
-## Homepage section stack
+## Homepage
 
 ```text
 [ HERO ]
-From foster care to independent life — with someone in your corner.
-[ Get Support ] [ Refer a Young Adult ]
-
+You don't have to face the next chapter alone.
+[ GET SUPPORT ] [ PUT COMPASSION INTO ACTION ]
         ↓
-
-[ WHAT REST EZZZ DOES ]
-Practical transition support + mentorship + resource navigation
-
+[ REST ON US ]
+Practical support + human connection + community resources
         ↓
-
-[ HOW WE HELP ]
-Housing & Resources
-Money & Banking
-Employment & Job Readiness
-Entrepreneurship
-Life Skills & Planning
-Mentorship
-
+[ THREE WAYS WE HELP ]
+Transition | Family Relief | Community Outreach
         ↓
-
-[ STEP-BY-STEP PATH ]
-Talk to Us → Define Goals → Build a Plan → Connect Resources → Keep Moving Forward
-
+[ TRANSITION TO INDEPENDENCE ]
+Housing | Money | Work | Business | Life Skills | Mentor
         ↓
-
-[ SOMEONE IN YOUR CORNER ]
-Human guidance and ongoing mentorship
-
-        ↓
-
-[ FOR SCHOOLS & SOCIAL WORKERS ]
-Referral pathway
-
-        ↓
-
-[ COMMUNITY OUTREACH ]
-Food • Basic Needs • Outreach • Events
-
-        ↓
-
 [ ACTS OF COMPASSION ]
-A Meal • A Haircut • A Blanket • A Skill • A Resource • A Connection
-[ Take an Act of Compassion ]
-
+Meal | Essential | Skill | Service | Resource | Connection
         ↓
-
-[ GET INVOLVED ]
-Volunteer • Provide a Service • Partner • Fundraise
-
+[ COMMUNITY IN ACTION ]
+Food • Hygiene • Toy Drives • Cleanup • Fire Response
         ↓
-
+[ CAUSES & EVENTS ]
+Turkey Donations • Sparkle of Love • World Kindness • etc.
+        ↓
+[ PARTNERS / SPONSORS ]
+        ↓
 [ STORIES / IMPACT ]
-
         ↓
-
+[ GET INVOLVED ]
+        ↓
 [ DONATE ]
-
         ↓
-
 [ CONTACT / FOOTER ]
 ```
 
-## Acts of Compassion model
+## Existing-site migration
 
 ```text
-                         ACTS OF COMPASSION
-                                 │
-          ┌──────────────────────┼──────────────────────┐
-          ▼                      ▼                      ▼
-      GIVE TIME              GIVE A SKILL          GIVE A RESOURCE
-          │                      │                      │
-          ▼                      ▼                      ▼
-     Outreach/help        Haircut/pro service     Meal/blanket/item
-          │                      │                      │
-          └──────────────────────┼──────────────────────┘
-                                 ▼
-                       PRACTICAL HUMAN HELP
-                                 │
-                                 ▼
-                         SOMEONE MOVES FORWARD
-```
+HOME                → integrated Home
+ABOUT               → About
+SPONSOR             → Get Involved / Sponsor
+CAUSES              → Community / Causes & Events
+CONTACT ("Journal") → Contact
+DONATE              → Donate
 
-## Program architecture
+Recovery / Family United / Hope duplicate cards
+                    → verify + merge into Family Relief
 
-```text
-TRANSITION SUPPORT
-├── Housing & Resource Navigation
-├── Money & Banking Foundations
-├── Employment & Job Readiness
-├── Entrepreneurship Guidance
-├── Life Skills
-├── Goal / Transition Planning
-└── Ongoing Mentorship
-
-All programs are supported by:
-RESOURCE NAVIGATION → "If we don't have the resource, help find it."
+Instagram activity  → Community / Acts / Stories
+Sparkle choices     → reusable Get Involved model
+About-2             → 301 → About
+Sample Page         → retire
+Leo Vetrov          → retire demo content
 ```
 
 ## WordPress content model
@@ -180,49 +155,11 @@ RESOURCE NAVIGATION → "If we don't have the resource, help find it."
 WORDPRESS
 ├── Pages
 ├── Programs
+├── Support Areas
 ├── Acts of Compassion
-├── Community Events
-├── Partners / Resource Providers
+├── Causes / Events
+├── Partners / Sponsors
 ├── Stories / Impact
 ├── Resources
 └── FAQs
 ```
-
-## Priority
-
-```text
-P0 / LAUNCH
-├── Home
-├── Get Support
-├── Transition Support
-├── Housing & Resources
-├── Money & Banking
-├── Employment
-├── Entrepreneurship
-├── Mentorship
-├── Referral Partner Flow
-├── Acts of Compassion landing section / CTA
-├── About / Founder Story
-├── Donate
-└── Contact
-
-P1 / NEXT
-├── Acts of Compassion opportunity/story archive
-├── Community Outreach
-├── Events
-├── Partners
-├── Volunteer
-├── Fundraise
-├── Stories / Impact
-└── Resource Library
-
-HOLD / VERIFY
-├── Funeral Assistance
-└── Insurance Assistance
-```
-
-## Strategic source
-Based primarily on the September 28, 2026 founder interview, supported by archive and public-source research, plus current Foundation planning decisions.
-- `research/SOURCE-INTERVIEW-2026-09-28.md`
-- `research/FOUNDER-INTERVIEW-DECOMPOSITION.md`
-- `IA-JJG.md`
