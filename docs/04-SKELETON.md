@@ -1,107 +1,142 @@
 # Plane 4 — Skeleton
 
 ## Header
-- logo → Home
+- Rest Ezzz logo
 - Get Support
 - Programs
-- About
 - Community
 - Get Involved
+- About
 - Donate
-- clear mobile menu
-- Contact in utility/header/footer
+- Contact utility
+- equivalent mobile menu
 
 ## Homepage hierarchy
-1. **Hero** — transition-focused value proposition + Get Support + Refer Someone
-2. **What Rest Ezzz Does** — short explanation of practical transition support
-3. **How We Help** — housing/resources, money/banking, work/business, mentorship
-4. **A Step-by-Step Path** — simple transition-planning sequence
-5. **Someone in Your Corner** — relational mentorship differentiator
-6. **For Schools & Social Workers** — referral CTA
-7. **Community Outreach** — meals/basic-needs/community activity
-8. **Acts of Compassion** — accessible, practical ways anyone can help
-9. **Get Involved** — volunteer, provide a service, partner, fundraise
-10. **Impact / Story** — only substantiated examples
+
+1. **Hero**
+   - integrated umbrella message
+   - Get Support
+   - Put Compassion Into Action
+
+2. **Rest on Us**
+   - concise explanation of Rest Ezzz as an outreach nonprofit
+   - preserve authentic "Rest on us…" language
+
+3. **Three Ways We Help**
+   - Transition to Independence
+   - Family Relief & Loss Support
+   - Community Outreach
+
+4. **Transition Support**
+   - housing/resources
+   - money/banking
+   - work/business
+   - life skills
+   - mentorship
+   - CTA: Get Support / Refer a Young Adult
+
+5. **Acts of Compassion**
+   - meal
+   - clothing/essential
+   - skill/service
+   - volunteer action
+   - connection/resource
+   - CTA: Take an Act of Compassion
+
+6. **Community in Action**
+   - authentic causes/outreach examples
+   - toy drive
+   - food/hygiene
+   - beautification
+   - emergency groceries
+   - fire response
+   - garden project
+
+7. **Causes & Events**
+   - current/archived campaign cards
+
+8. **Partners / Sponsors**
+   - current verified partners and contribution pathways
+
+9. **Stories / Impact**
+   - substantiated + permissioned only
+
+10. **Get Involved**
+   - Volunteer
+   - Sponsor / Partner
+   - Donate Goods
+   - Provide a Service
+   - Fundraise
+   - Vendor opportunities
+
 11. **Donate**
+
 12. **Contact/footer**
 
-## Proposed hero content direction
-Eyebrow: Rest Ezzz Foundation
+## Hero copy territory — reconstructed, approval required
 
-H1 territory:
+Eyebrow:
+**Rest Ezzz Foundation**
+
+H1:
+**You don't have to face the next chapter alone.**
+
+Support:
+**Practical support, human connection, and a community ready to help — from young adults building independent lives to families and neighborhoods facing difficult moments.**
+
+Primary CTA: **Get Support**  
+Secondary CTA: **Put Compassion Into Action**
+
+Alternative youth-forward H1 remains available on the Transition page:
 **From foster care to independent life — with someone in your corner.**
 
-Support text:
-Practical, step-by-step help with housing resources, money, work, life skills and next steps for young adults transitioning out of foster care.
-
-Primary CTA: **Get Support**
-Secondary CTA: **Refer a Young Adult**
-
-This is reconstructed copy for review, not historical language.
-
-## Acts of Compassion homepage section
+## Get Support landing page
+First choice should be by need:
 
 ```text
-┌───────────────────────────────────────────────────────────┐
-│                    ACTS OF COMPASSION                     │
-│                                                           │
-│   Compassion doesn't have to be complicated.              │
-│   A meal. A haircut. A blanket. A skill. A connection.    │
-│   One practical act can help someone move forward.        │
-│                                                           │
-│   [ TAKE AN ACT OF COMPASSION ]                           │
-│   [ SEE CURRENT OPPORTUNITIES ]                           │
-└───────────────────────────────────────────────────────────┘
+WHAT KIND OF SUPPORT ARE YOU LOOKING FOR?
+
+[ Transitioning From Foster Care ]
+[ Family / Loss Support ]
+[ Community / Emergency Resources ]
+[ I'm Referring Someone ]
 ```
 
-Possible visual cards:
-- Give Time
-- Give a Skill
-- Give a Meal / Essential
-- Provide a Resource
-- Join an Outreach
-- Business Acts of Compassion
+Then explain:
+- what Rest Ezzz may help with
+- how contact/review works
+- what is not guaranteed
+- privacy expectation
+- human contact alternative
 
-This section should make participation feel immediate and achievable without competing with the primary Get Support journey.
+## Acts of Compassion section
 
-## Get Support page
-- "You don't have to figure everything out at once."
-- What we may help with
-- Who the program is for (once eligibility is confirmed)
-- How support works
-- What happens after you contact us
-- Request Support CTA
-- phone/email alternative
-- privacy expectation before collecting personal data
+```text
+ACTS OF COMPASSION
 
-## Program card system
-Recommended cards:
-- Housing & Resources
-- Money & Banking
-- Work & Job Readiness
-- Business & Entrepreneurship
-- Life Skills
-- Mentorship & Planning
+A meal.
+A haircut.
+A blanket.
+A skill.
+A resource.
+A connection.
 
-Each card answers:
-1. What is this?
-2. What might Rest Ezzz help with?
-3. What is the next step?
+One practical act can help someone move forward.
 
-## Referral-partner page
-- who Rest Ezzz supports
-- signs a young person may need transition support
-- what a referral does / does not guarantee
-- contact/referral action
-- boundaries around contact with minors/in-care youth must be confirmed before publishing
+[ TAKE AN ACT OF COMPASSION ]
+[ SEE CURRENT OPPORTUNITIES ]
+```
 
-## Community page
-- Acts of Compassion
-- upcoming/recent outreach
-- food/basic-needs activity
-- community partners
-- volunteer opportunities
-- photo/story consent standards
+## Causes/events
+Do not preserve empty template detail pages. Every public cause card should have:
+- title
+- date/status
+- why it matters
+- what Rest Ezzz did/is doing
+- ways to participate
+- media
+- partners
+- outcome/update
 
 ## Responsive/accessibility
-Mobile-first; no hover-only information; usable tap targets; semantic landmarks; keyboard operation; visible focus; meaningful links; form labels/errors; alt-text strategy; adequate contrast; reduced-motion respect. Target WCAG 2.2 AA practices.
+Target WCAG 2.2 AA practices: mobile-first layout, keyboard operation, visible focus, semantic headings/landmarks, descriptive links, form labels/errors, adequate contrast, reduced-motion support and meaningful alt text.
