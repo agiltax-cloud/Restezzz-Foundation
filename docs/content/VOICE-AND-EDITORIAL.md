@@ -1,19 +1,69 @@
 # Voice & Editorial Standard
 
 ## Voice
-Compassionate, calm, plainspoken, respectful and specific. Never melodramatic, salesy or presumptive about grief.
+Compassionate, practical, hopeful, plainspoken, human, respectful and action-oriented.
 
-## Write for action
-Lead with what a visitor can understand or do. Use short headings, concrete verbs and clear next steps.
+Avoid melodrama, savior framing, generic charity clichés and bureaucracy.
+
+## Authentic language bank
+- Rest on us…
+- Uplift the human spirit
+- Make a difference
+- Helping hands
+- Comfort in difficult times
+- One family and neighborhood at a time
+- Reach down and lift someone up
+
+Use selectively, not all at once.
+
+## Audience writing
+
+### Young adults
+Adult-to-adult and empowering. Never infantilize foster youth.
+
+### Families facing loss/crisis
+Calm, clear and compassionate. Never overpromise financial assistance.
+
+### Community/supporters
+Concrete actions over vague inspiration.
+
+## Every page should answer
+1. What is this?
+2. Is it relevant to me?
+3. What can Rest Ezzz actually do?
+4. What happens next?
+5. How do I contact/participate?
 
 ## Avoid
-"deserving families", guilt-based donation appeals, guarantees of assistance, unexplained insurance/legal jargon, unsupported impact numbers, invented testimonials, urgency that pressures grieving users.
+- "deserving families"
+- guarantees
+- unsupported impact numbers
+- invented testimonials
+- unverified medical/insurance/legal claims
+- guilt fundraising
+- blanket negative foster-care claims
+- generic AI filler
+- Avada demo copy
 
-## Claims
-Historical wording must be marked recovered internally. Current operational claims require Foundation approval or reliable evidence. Dates and program status should be explicit when relevant.
+## Evidence states
+Distinguish:
+- live first-party published
+- current approved
+- current founder planning
+- corroborated
+- reconstructed
+- verify
+
+Live copy can still require operational verification.
 
 ## Sensitive content
-Collect only information needed for the stated workflow. Explain why information is requested and what happens next. Do not expose applicant stories/photos without appropriate permission.
+- beneficiary identity requires consent
+- sensitive founder trauma/history requires explicit approval for reuse
+- collect minimum support/intake data
+- explain data use and next steps
 
-## Accessibility/readability
-Use descriptive links, meaningful headings, short paragraphs, lists for steps, and language understandable without nonprofit/insurance expertise.
+## Grammar / authenticity
+Preserve emotional meaning of existing mission/vision while improving clarity. Edited wording is not a historical quote.
+
+## Accessibility
+Clear headings, descriptive links, short paragraphs, step lists, meaningful form labels and jargon-free language.
