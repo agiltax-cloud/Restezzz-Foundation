@@ -1,15 +1,93 @@
 # Plane 2 — Scope
 
-## Must
-Editable WordPress content; responsive navigation; Get Help; Donate; Contact; accessible approved forms; SEO metadata/sitemap; privacy/legal pages; keyboard/focus support; performant images.
+## Strategic content scope
+The new site should center Rest Ezzz's first-party-described work with young adults transitioning out of foster care, then support community outreach and partner mobilization.
 
-## Should
-Volunteer inquiry; partner inquiry; campaigns/community updates; impact content; Spanish if confirmed; reusable Gutenberg patterns.
+## Must-have functionality
+- editable WordPress/Gutenberg content
+- responsive navigation
+- prominent **Get Support** pathway
+- referral pathway for schools/social workers/community organizations
+- Contact
+- Donate
+- accessible forms with privacy notices
+- SEO metadata and sitemap
+- privacy/legal pages
+- keyboard/focus accessibility
+- performant responsive images
+- reusable program, resource and event components
 
-## Conditional
-Online assistance application, CRM/email integration, events, newsletter, donor portal. These require workflow/privacy decisions.
+## Primary program content
+### Transition Support
+- Preparing to Age Out
+- First Housing / Safe Place to Stay
+- Life Skills
+- Financial Foundations
+- Banking Basics
+- Employment & Job Readiness
+- Entrepreneurship / Business Guidance
+- Goal & Transition Planning
+- Ongoing Mentorship
+- Resource Navigation
 
-## Content
-Home; About/Who We Are; Mission; Get Help; Funeral Assistance; Insurance Assistance; Eligibility; How It Works; Impact/Community; Campaigns; Partners; Volunteer; Fundraise; Partner With Us; Donate; Contact; Privacy; Accessibility.
+### Community Outreach
+- food distribution / meals
+- blankets/basic-needs outreach
+- community visits/listening
+- outreach to unhoused families and individuals
+- recurring local service events
 
-No eligibility, monetary, tax, legal, insurance or application claim is published until sourced or approved as current policy.
+### Partner Network
+Potential partner categories explicitly suggested in the founder interview:
+- schools
+- social workers / social-service contacts
+- youth-serving organizations
+- barbers
+- restaurants
+- local businesses
+- volunteers and community ministries
+
+## Secondary / legacy program content
+Historical sources mention funeral-expense scholarships and insurance assistance. Treat these as **legacy/unconfirmed current programs** until the Foundation explicitly confirms whether they remain active.
+
+Do not make them top-level IA in the rebuilt site unless confirmed.
+
+## Forms / interactions
+P0:
+- Request Support
+- Refer a Young Adult
+- Volunteer / Partner Inquiry
+- Contact
+- Donate
+
+Conditional after process/privacy review:
+- detailed online intake/application
+- document uploads
+- CRM integration
+- event registration
+- newsletter
+- donor portal
+- mentor matching
+
+## Content requirements
+- Home
+- About
+- Founder / Why Rest Ezzz
+- Get Support
+- Transition Support
+- Life Skills & Financial Foundations
+- Employment & Entrepreneurship
+- Housing & Resource Navigation
+- Mentorship
+- Community Outreach
+- For Referral Partners
+- Get Involved
+- Partners
+- Donate
+- Contact
+- FAQ
+- Privacy
+- Accessibility
+
+## Publishing rule
+No eligibility, monetary, legal, insurance, foster-care-system, privacy, application, age-range or service-geography claim is published until it is sourced or approved as current first-party policy.
