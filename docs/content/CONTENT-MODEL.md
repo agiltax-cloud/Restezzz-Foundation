@@ -1,86 +1,75 @@
 # Content Model
 
 ## Page
-title, slug, summary, body sections, primary/secondary CTA, evidence references, review owner, last reviewed.
+title, slug, audience, summary, sections, CTAs, evidence, approval state, owner, last reviewed.
 
-## Transition Support Program
-name, plain-language summary, audience, geography, eligibility, exclusions, support types, process, next step, privacy note, evidence IDs, review date.
+## Program
+- name
+- pillar: transition / family relief / community outreach
+- audience
+- geography
+- eligibility/exclusions
+- support types
+- process
+- limits/non-guarantees
+- next step
+- privacy
+- evidence
+- current/approved status
+- review date
 
 ## Support Area
-Examples: Housing & Resources, Money & Banking, Employment, Entrepreneurship, Life Skills, Mentorship.
-Fields: name, need/problem, what Rest Ezzz may do, what Rest Ezzz does not promise, examples, next step, evidence IDs.
+Examples: Housing, Money/Banking, Employment, Entrepreneurship, Life Skills, Mentorship, Funeral Relief, Insurance Navigation, Community Resources.
 
-## Transition Plan
-Fields: participant-defined goals, target timeframe, action categories, resource needs, next check-in.
-This is a content/process model only; do not store sensitive participant data in WordPress without an approved privacy/security workflow.
-
-## Process Step
-sequence, title, explanation, responsibility, expected next step.
+Fields: need, what Rest Ezzz may do, what is not promised, examples, CTA, evidence.
 
 ## Referral Path
-referrer type, eligibility notes, referral information required, consent expectations, response process, contact/CTA.
+referrer type, audience, info required, consent, response process, CTA.
 
-## Community Outreach Event
-title, date, location, audience, purpose, supplies/services, volunteer needs, partners, CTA, media, consent status, evidence/source.
+## Cause / Event
+title, slug, status, dates, location, purpose, support needed, participation modes, partners, outcome/update, media, evidence.
 
-## Partner / Resource Provider
-name, category, relationship description, service offered, geography, contact/URL, logo, permission/status, evidence.
-
-## Community/Impact Item
-date, title, description, metric/claim, source, image, location, participant-consent status.
-
-## Story / Testimonial
-subject, relationship to Foundation, story, quote, permission status, fact verification, media permission, evidence IDs.
-Never publish without approval/consent.
-
-## Person/Team
-name, role, bio, image, publish approval.
-
-## FAQ
-question, answer, audience, related program, evidence IDs, review date.
-
-## Legacy Program
-name, historical description, current-status flag, evidence IDs. Used to preserve research on funeral/insurance assistance until current status is confirmed.
-
-## Site Settings
-approved brand/display name, legal name, phone, email, address, social URLs, donation URL, legal identifiers, footer copy.
-
-## Provenance
-Every factual content object supports:
-- evidence_state
-- evidence_ids
-- source/approval
-- last_verified
-- current_status
-
+Migration sources include Turkey Donations, Sparkle of Love, Rimpau Park and World Kindness Carnival.
 
 ## Act of Compassion
-A lightweight, action-oriented content type for community participation.
+title, practical need/action, category, beneficiary group, date/status, location, need/quantity, participation method, partner, CTA, media, privacy/consent, source, completion/update.
 
-Fields:
-- title
-- short need/action statement
-- category: time / skill / food / essentials / service / resource / outreach
-- audience or beneficiary group
-- date/status
-- location or service area
-- what is needed
-- how to participate
-- quantity/goal if appropriate
-- partner involved
-- CTA label
-- CTA destination
-- image/media
-- consent/privacy status
-- evidence/source
-- completion/update note
+## Partner / Sponsor / Resource Provider
+name, type, relationship, contribution/service, geography, URL/contact, logo permission, approved recognition/benefits, evidence.
 
-Use cases:
-- "Provide 20 winter blankets"
-- "Barbers needed for a community outreach day"
-- "Sponsor meals for an outreach event"
-- "Donate interview clothing"
-- "Offer a professional skill or resource"
+## Community / Impact Item
+date, activity, location, description, outcomes, partner, source, media, consent.
 
-Publishing rule:
-Do not expose an individual's private circumstances or identifying information in a public Act of Compassion unless appropriate consent exists. Prefer needs-based descriptions over personal case details.
+## Story / Testimonial
+subject, story, quote, verification, consent, media permission, evidence.
+
+## Person / Team
+name, role, bio, image, contact decision, approval.
+
+## FAQ
+question, answer, audience, program, evidence, review date.
+
+## Donation Configuration
+Runtime reference only:
+- system type
+- form IDs
+- donate URL
+- confirmation/failure/dashboard URLs
+- contribution types
+- payment-method display rules
+- receipt/contact owner
+
+Current evidence: GiveWP form ID 1207.
+
+## Site Settings
+display name, legal name, phone, email, address, social URLs, donation URL, legal identifiers, footer copy.
+
+## Provenance
+Every factual object supports:
+- evidence_state
+- evidence_ids
+- original source URL
+- approval
+- last_verified
+- current_status
+- migration decision: KEEP / ADAPT / MERGE / ARCHIVE / RETIRE
