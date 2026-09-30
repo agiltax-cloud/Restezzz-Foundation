@@ -1,13 +1,44 @@
-# First-Party Archive Inventory
+# First-Party Historical Archive Inventory
 
-Known Wayback inventory supplied during recovery.
+## Wayback inventory
+Historical Wayback results supplied during recovery showed:
+- one principal HTML homepage URL
+- 9 captures / 5 unique versions
+- capture range Jan 2024–Jul 2025
+- supporting logos, imagery, icons and UIkit assets
 
-HTML: http://restezzzfoundation.org/ — 9 captures, 5 unique, Jan 1 2024–Jul 18 2025.
+## Historical assets
+Brand/UI:
+- re_logo.svg
+- re_logo_mobile.png
+- re_logo_white.png
+- icons/favicons
 
-Brand/UI: apple-touch-icon.png, favicon-16x16.png, favicon-32x32.png, safari-pinned-tab.svg, site.webmanifest, re_logo.svg, re_logo_mobile.png, re_logo_white.png, re_icon_arrow_left.png, re_icon_arrow_right.png, re_icon_mobile_menu.png.
+Section imagery:
+- hero_home
+- who_we_are
+- relief
+- process
+- partner
+- campaigns
+- community
+- fundraise
+- volunteer
+- donate
 
-Content imagery: re_image_hero_home.png, re_image_who_we_are.png, re_image_who_we_are_bg.png, re_image_relief.png, re_image_process.png, re_image_partner.png, re_image_campaigns.png, re_image_community.png, re_image_fundraise_2.png, re_image_volunteer.png, re_image_donate.png.
+## Current live-site superseding source
+Because the production WordPress site is restored, the current live-site snapshot is now a higher-value source for content migration than historical archive fragments.
 
-Frontend: uikit.min.css, uikit.min.js, uikit-icons.min.js.
+See:
+- `LIVE-SITE-AUDIT-2026-09-30.md`
+- `live-site-snapshot/`
 
-Interpretation: capture set strongly indicates a primarily single-page historical site. Filenames prove concepts existed, but do not prove exact copy or ordering without HTML confirmation.
+## Use of archive now
+Use Wayback primarily to:
+- recover assets missing from current WordPress
+- compare historical messaging
+- identify removed content
+- preserve brand history
+- help detect whether current content is template/demo material
+
+Do not allow historical archive content to override current Foundation direction or verified current production data.
