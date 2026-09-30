@@ -1,104 +1,106 @@
 # Plane 1 — Strategy
 
-## Strategic reset
-The September 28, 2026 founder interview materially changes the center of gravity of the site.
+## Integrated strategic position
+The restored live site and the September 28, 2026 founder interview are complementary, not competing.
 
-Rest Ezzz should be positioned primarily as a **transition-support and life-foundation nonprofit for young adults aging out of foster care**, with community outreach and **Acts of Compassion** as broader ways the community can participate. Earlier funeral/insurance assistance references remain part of the historical evidence set, but they should not define the new IA unless the Foundation confirms they are still active programs.
+The live site establishes Rest Ezzz as a broad **outreach nonprofit** serving families and communities through loss-related relief, food/basic-needs outreach, community causes, sponsorship and fundraising.
 
-## Core purpose
-Help young adults move from foster care into independent adulthood with practical, relational, step-by-step support.
+The founder interview establishes a major current strategic priority: **helping young adults transition from foster care into independent adulthood through practical, relational, step-by-step support**.
 
-The founder described support that may include:
-- first-place-to-live / housing-resource navigation
-- financial help and resource navigation
-- opening and managing a bank account
-- understanding W-4/W-2 basics and employment paperwork
-- job-search guidance
-- financial decision-making
-- entrepreneurship/business-startup guidance
-- goal-setting and six-month transition planning
-- ongoing mentorship: "someone to call"
-- referrals when Rest Ezzz does not directly provide a needed resource
+The integrated strategy is therefore:
 
-## Acts of Compassion
-Rest Ezzz should also provide a simple way for people to participate through **practical acts of compassion** — small or organized actions that meet a real need and reinforce the Foundation's values.
+> Rest Ezzz helps people move through difficult transitions with practical support, human connection, resources and acts of compassion.
 
-This is broader than a formal program and can include:
-- providing a meal or essential item
-- donating a professional service
-- volunteering at an outreach event
-- helping supply a transition need
-- contributing a skill, resource or connection
-- participating in a Rest Ezzz community compassion initiative
+## Strategic pillars
 
-The purpose is not to create random charity activity. Acts of Compassion should connect back to the same principle that drives transition support: **see a practical need, respond humanely, and help someone move forward.**
+### 1. Transition to Independence
+Primary growth/mission priority described by founder:
+- housing/resource navigation
+- money/banking foundations
+- job readiness
+- entrepreneurship
+- life skills
+- goal planning
+- mentorship
+- resource referrals
 
-## Primary audience
-### Young adults preparing to age out of foster care or recently transitioned out
-Needs:
-- a safe, understandable path into independent life
-- practical life skills, not abstract advice
-- help prioritizing housing, money, work and next steps
-- a trusted adult relationship
-- resource navigation without judgment
-- options that reflect the individual's goals, including employment or entrepreneurship
+### 2. Family Relief & Loss Support
+Current live site publicly describes:
+- funeral-expense relief
+- life-insurance assistance
+- financial aid for families coping with loss
+- fundraising support
+- funeral-process support
 
-Success:
-- understands what Rest Ezzz can help with
-- can request support without a confusing process
-- leaves the interaction with concrete next steps and a human connection
+Exact current eligibility, limits and operating process must be confirmed before launch.
 
-## Secondary audiences
-### Referral partners
-Schools, social workers, youth-serving organizations and community programs that may identify young people who could benefit from support.
+### 3. Community Outreach
+Strongly supported by current site + embedded social evidence:
+- food
+- hygiene
+- clothing/shoes
+- backpacks/books
+- emergency groceries
+- neighborhood beautification
+- garden projects
+- fire/disaster response
+- community events
 
-### Community members in need
-The founder also described outreach to unhoused families/individuals, including food, blankets and community contact.
+### 4. Acts of Compassion
+A participation layer converting small practical needs into bounded community actions:
+- meals
+- essentials
+- skills/services
+- volunteer help
+- goods
+- connections
+- neighborhood projects
 
-### Supporters
-Donors, volunteers, barbers, restaurants, businesses and other partners who can contribute money, services, meals, supplies or expertise.
+## Authentic brand territory
+Existing Rest Ezzz language worth preserving:
+- **Rest on us…**
+- **Uplift the human spirit**
+- **Make a difference**
+- **Helping hands**
+- **We bring comfort in difficult times**
+- **One family and neighborhood at a time**
 
-### Compassion participants
-People who may not be ready for a formal volunteer role but are willing to complete a concrete act of compassion, contribute an item/service, or join a focused community effort.
+## Primary audiences
+1. Young adults transitioning from foster care.
+2. Families needing relief/support, including loss-related help where active.
+3. Community members needing basic/emergency resources.
+4. Referral partners: schools, social workers, youth-serving organizations.
+5. Support ecosystem: donors, volunteers, sponsors, vendors, businesses, restaurants, barbers, professionals and nonprofit partners.
 
 ## Organizational goals
-1. Make transition support visible and easy to understand.
-2. Build a credible referral pathway for youth-serving professionals.
-3. Convert one-time help into sustained mentorship where appropriate.
-4. Organize community outreach into repeatable programs/events.
-5. Build a partner network that expands available resources.
-6. Create an accessible **Acts of Compassion** pathway for everyday community participation.
-7. Preserve flexibility: support plans should reflect each young person's goals rather than force one path.
-
-## Positioning
-Rest Ezzz is not a generic charity and should not present itself as a case-management bureaucracy. The distinguishing idea is **practical, human, step-by-step support**.
-
-Potential positioning territory for development:
-- "Someone in your corner for what comes next."
-- "From foster care to independent life."
-- "Real-world support for the next chapter."
-- "Compassion becomes action."
-
-These are reconstructed brand directions, not recovered historical slogans.
+1. Make help easy to understand by need, not by internal program names.
+2. Give young adults a clear transition-support path.
+3. Preserve and clarify family/loss-support services that are truly active.
+4. Turn Rest Ezzz's demonstrated outreach into a visible Community program.
+5. Build Acts of Compassion into a simple participation mechanism.
+6. Grow a reusable community resource network.
+7. Preserve authentic history and causes without carrying forward demo/template clutter.
+8. Make all financial, eligibility, tax and service promises evidence-based.
 
 ## UX principles
-1. **Young person first.** Design for the person seeking help, not the donor.
-2. **Practical before promotional.** Explain what help looks like in real life.
-3. **Relationship matters.** Make human contact visible.
-4. **Choice and agency.** Support employment, entrepreneurship and other realistic paths without implying one "correct" future.
-5. **Compassion should be actionable.** Give supporters concrete, bounded ways to help.
-6. **Plain language.** Avoid social-service jargon.
-7. **Minimal data collection.** Do not ask for sensitive information before it is needed.
-8. **Evidence before claims.** Do not publish unverified statements about foster-care systems, homelessness causation or legal restrictions.
+1. **Need first.** Visitors should identify the kind of help they need immediately.
+2. **Practical before promotional.**
+3. **Human connection is a product feature.**
+4. **Choice and agency.**
+5. **Compassion should be actionable.**
+6. **Plain language.**
+7. **Minimal sensitive-data collection.**
+8. **No unsupported promises.**
 9. **Mobile-first and accessible.**
 
-## Candidate measures
-- support inquiries completed
-- referral inquiries from schools/social workers
-- volunteer/partner inquiries
+## Candidate success measures
+- support inquiries by pathway
+- completed youth/referral inquiries
 - Acts of Compassion participation
-- recurring community outreach participation
-- successful content findability
-- donation progression
+- volunteer/sponsor/partner inquiries
+- donations completed
+- event participation
+- successful resource navigation
+- content findability
 
 Sensitive applicant data must not be used for ordinary analytics.
