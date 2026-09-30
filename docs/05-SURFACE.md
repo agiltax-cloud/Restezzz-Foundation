@@ -1,20 +1,62 @@
 # Plane 5 — Surface
 
-Recover recognizable Rest Ezzz brand elements where legitimate archived originals exist; modernize without presenting replacement choices as historical.
+## Rebrand implication
+The first-party founder interview shows that the site's emotional center is **transition, capability, belonging and practical support** — not grief/funeral services.
 
-## Known archived assets
-re_logo.svg; re_logo_white.png; re_logo_mobile.png; hero and section imagery in research/ARCHIVE-INVENTORY.md.
+The visual system should therefore be re-evaluated rather than simply restoring the historical surface.
 
-## Direction
-Calm, dignified, human; avoid distress imagery and funeral clichés; make assistance actions safe/obvious; do not let supporter content overpower Get Help; generous whitespace and readable typography.
+## Brand character
+- encouraging
+- grounded
+- practical
+- youthful without feeling childish
+- credible
+- community-based
+- hopeful
+- relational
 
-## Tokens after asset inspection
-Palette, typography scale, spacing, radii, borders/shadows, containers, button hierarchy.
+## Visual territory
+Avoid:
+- funeral-home aesthetics
+- dark grief imagery
+- bureaucratic/government-program visual language
+- stock photos that make youth look helpless
+- savior-oriented charity imagery
 
-## Imagery
-Prefer recovered first-party assets. Track rights/source for new imagery. Use meaningful alt text. Do not publish identifiable beneficiary imagery/testimonials without permission.
+Prefer:
+- forward movement / next-step metaphors
+- real environments: banking, work, housing, planning, community
+- authentic community/service imagery with permission
+- visual cues of guidance and confidence
+- warm, contemporary typography and generous whitespace
+
+## Historical assets
+Known archived assets remain valuable as recovery/reference:
+- re_logo.svg
+- re_logo_white.png
+- re_logo_mobile.png
+- historical hero/section imagery in research/ARCHIVE-INVENTORY.md
+
+But each should be evaluated against the new positioning before reuse.
+
+## Identity question
+The spoken interview consistently uses "Rest Easy" while the current organizational/domain identity is "Rest Ezzz." The rebrand process should explicitly decide:
+- legal name vs public-facing brand
+- whether "Rest Ezzz" remains the display brand
+- whether pronunciation/tagline needs clarification
+- whether a refreshed mark is needed
+
+## Suggested design motifs
+- path / stepping-stones / next chapter
+- open door / horizon
+- supportive connection
+- checklist/roadmap
+- resource network
+
+Avoid literalizing these into clichés; they are design-system territory, not mandatory logo symbols.
 
 ## Components
-Header, mobile nav, hero, assistance card, process steps, impact block, partner grid, campaign card, CTA band, form, alert/status, footer.
+Header, mobile nav, transition-support hero, program cards, step-by-step roadmap, mentor/support callout, referral-partner CTA, community event card, partner/service grid, story/impact block, donate CTA, form, alert/status, footer.
 
-Acceptance: consistent states, AA-oriented contrast, focus/hover/active states, responsive images, HTML text instead of text baked into images where practical.
+## Surface acceptance
+Consistent component states, AA-oriented contrast, focus/hover/active states, responsive images, HTML text instead of text baked into images where practical, and imagery/quotes used only with appropriate consent.
