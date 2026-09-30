@@ -1,0 +1,79 @@
+{
+  "homepage.html": {
+    "url": "https://restezzzfoundation.org/",
+    "final_url": "https://restezzzfoundation.org/",
+    "status": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "length": 228094
+  },
+  "robots.txt": {
+    "url": "https://restezzzfoundation.org/robots.txt",
+    "final_url": "https://restezzzfoundation.org/robots.txt",
+    "status": 200,
+    "content_type": "text/plain; charset=utf-8",
+    "length": 123
+  },
+  "wp-sitemap.xml": {
+    "url": "https://restezzzfoundation.org/wp-sitemap.xml",
+    "final_url": "https://restezzzfoundation.org/wp-sitemap.xml",
+    "status": 200,
+    "content_type": "application/xml; charset=UTF-8",
+    "length": 580
+  },
+  "sitemap_index.xml": {
+    "url": "https://restezzzfoundation.org/sitemap_index.xml",
+    "final_url": "https://restezzzfoundation.org/sitemap_index.xml",
+    "status": 404,
+    "content_type": "text/html; charset=UTF-8",
+    "length": 77735
+  },
+  "wp-json.json": {
+    "url": "https://restezzzfoundation.org/wp-json/",
+    "final_url": "https://restezzzfoundation.org/wp-json/",
+    "status": 200,
+    "content_type": "application/json; charset=UTF-8",
+    "length": 297449
+  },
+  "wp-pages.json": {
+    "url": "https://restezzzfoundation.org/wp-json/wp/v2/pages?per_page=100&_embed",
+    "final_url": "https://restezzzfoundation.org/wp-json/wp/v2/pages?per_page=100&_embed",
+    "status": 200,
+    "content_type": "application/json; charset=UTF-8",
+    "length": 353639
+  },
+  "wp-posts.json": {
+    "url": "https://restezzzfoundation.org/wp-json/wp/v2/posts?per_page=100&_embed",
+    "final_url": "https://restezzzfoundation.org/wp-json/wp/v2/posts?per_page=100&_embed",
+    "status": 200,
+    "content_type": "application/json; charset=UTF-8",
+    "length": 2
+  },
+  "wp-media.json": {
+    "url": "https://restezzzfoundation.org/wp-json/wp/v2/media?per_page=100",
+    "final_url": "https://restezzzfoundation.org/wp-json/wp/v2/media?per_page=100",
+    "status": 200,
+    "content_type": "application/json; charset=UTF-8",
+    "length": 285224
+  },
+  "wp-give-forms.json": {
+    "url": "https://restezzzfoundation.org/wp-json/wp/v2/give_forms?per_page=100",
+    "final_url": "https://restezzzfoundation.org/wp-json/wp/v2/give_forms?per_page=100",
+    "status": 200,
+    "content_type": "application/json; charset=UTF-8",
+    "length": 1131
+  },
+  "give-form-1207.json": {
+    "url": "https://restezzzfoundation.org/wp-json/wp/v2/give_forms/1207",
+    "final_url": "https://restezzzfoundation.org/wp-json/wp/v2/give_forms/1207",
+    "status": 200,
+    "content_type": "application/json; charset=UTF-8",
+    "length": 1129
+  },
+  "give-form-1207-view.html": {
+    "url": "https://restezzzfoundation.org/?givewp-route=donation-form-view&form-id=1207",
+    "final_url": "https://restezzzfoundation.org/?givewp-route=donation-form-view&form-id=1207",
+    "status": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "length": 15376
+  }
+}
