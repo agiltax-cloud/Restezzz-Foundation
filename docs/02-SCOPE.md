@@ -1,117 +1,115 @@
 # Plane 2 — Scope
 
-## Strategic content scope
-The new site should center Rest Ezzz's first-party-described work with young adults transitioning out of foster care, then support community outreach, **Acts of Compassion**, and partner mobilization.
+## Integrated content scope
+The rebuild must support the full evidence-backed Rest Ezzz identity:
+
+1. Transition to Independence
+2. Family Relief & Loss Support
+3. Community Outreach
+4. Acts of Compassion
+5. Partners / Sponsors / Volunteers / Donors
 
 ## Must-have functionality
 - editable WordPress/Gutenberg content
 - responsive navigation
-- prominent **Get Support** pathway
-- referral pathway for schools/social workers/community organizations
-- Acts of Compassion landing section/page and CTA
-- Contact
+- **Get Support** pathway split by type of need
+- youth/referral workflow
+- family/loss-support information if confirmed active
+- Acts of Compassion opportunities
+- Causes & Events archive
+- Sponsor / Partner pathway
+- Volunteer pathway
+- goods/services contribution pathway
 - Donate
-- accessible forms with privacy notices
-- SEO metadata and sitemap
-- privacy/legal pages
-- keyboard/focus accessibility
-- performant responsive images
-- reusable program, resource, compassion, partner and event components
+- Contact
+- accessible forms + privacy notices
+- SEO metadata/sitemap
+- privacy/accessibility pages
+- keyboard/focus support
+- performant images
+- reusable program, event, compassion, partner and story components
+- donation confirmation/failure flow
+- donor-dashboard decision/migration if GiveWP remains
 
-## Primary program content
-### Transition Support
-- Preparing to Age Out
-- First Housing / Safe Place to Stay
-- Life Skills
-- Financial Foundations
-- Banking Basics
+## Program/content scope
+
+### Transition to Independence
+- Housing & Resource Navigation
+- Money & Banking Foundations
 - Employment & Job Readiness
-- Entrepreneurship / Business Guidance
-- Goal & Transition Planning
-- Ongoing Mentorship
-- Resource Navigation
+- Entrepreneurship Guidance
+- Life Skills & Goal Planning
+- Mentorship
+
+### Family Relief & Loss Support — verify operations
+Current live-site topics:
+- Funeral-Expense Relief
+- Life-Insurance Assistance
+- Financial Aid for Families Coping With Loss
+- Fundraising Support
+- Funeral-Process Navigation
 
 ### Community Outreach
-- food distribution / meals
-- blankets/basic-needs outreach
-- community visits/listening
-- outreach to unhoused families and individuals
-- recurring local service events
+- Food & Essentials
+- Clothing / Shoes / Hygiene
+- Neighborhood Projects
+- Emergency / Disaster Outreach
+- Causes & Events
 
 ### Acts of Compassion
-A broad participation layer for practical, community-centered help.
+- current practical needs/opportunities
+- time
+- goods
+- professional skills
+- service-provider participation
+- neighborhood/community projects
+- short stories of completed acts, with consent
 
-Content may include:
-- current compassion opportunities
-- simple ways to contribute time, goods, skills or services
-- community acts completed through Rest Ezzz
-- business/service-provider participation
-- seasonal or one-time calls to action
-- stories showing compassion translated into practical help
+## Existing participation model to preserve
+Current Sparkle of Love form supports:
+- Donate Funds
+- Donate Goods
+- Volunteer
+- Be a Sponsor
+- Be a Vendor
 
-Recommended CTA language:
-- **Take an Act of Compassion**
-- **Join an Act of Compassion**
-- **Put Compassion Into Action**
+This should inform a unified Get Involved component across campaigns.
 
-Final CTA language should be selected during copy/design review.
+## Current functionality to migrate/evaluate
+- GiveWP donation form ID 1207
+- Donor Dashboard
+- Donation Confirmation
+- Donation Failed
+- Contact forms
+- Instagram/community feed or curated social content
+- current contact details
 
-### Partner Network
-Potential partner categories explicitly suggested in the founder interview:
-- schools
-- social workers / social-service contacts
-- youth-serving organizations
-- barbers
-- restaurants
-- local businesses
-- volunteers and community ministries
-
-## Secondary / legacy program content
-Historical sources mention funeral-expense scholarships and insurance assistance. Treat these as **legacy/unconfirmed current programs** until the Foundation explicitly confirms whether they remain active.
-
-Do not make them top-level IA in the rebuilt site unless confirmed.
+## Do not migrate blindly
+- Sample Page
+- empty author archive
+- duplicate `/about-2/`
+- Avada demo cause "Leo Vetrov"
+- old Avada demo imagery
+- unsupported sponsor/medical/education claims
+- unverified fee-free fundraising claim
 
 ## Forms / interactions
 P0:
 - Request Support
-- Refer a Young Adult
-- Acts of Compassion interest/action
-- Volunteer / Partner Inquiry
+- Refer Someone / Refer a Young Adult
+- Acts of Compassion action
+- Volunteer / Sponsor / Partner inquiry
+- Donate Goods or Services
 - Contact
 - Donate
 
-Conditional after process/privacy review:
-- detailed online intake/application
+Conditional:
+- detailed intake/application
 - document uploads
 - CRM integration
 - event registration
-- newsletter
-- donor portal
 - mentor matching
-- public nominations for compassion recipients
-
-## Content requirements
-- Home
-- About
-- Founder / Why Rest Ezzz
-- Get Support
-- Transition Support
-- Life Skills & Financial Foundations
-- Employment & Entrepreneurship
-- Housing & Resource Navigation
-- Mentorship
-- Community Outreach
-- Acts of Compassion
-- For Referral Partners
-- Get Involved
-- Partners
-- Donate
-- Contact
-- FAQ
-- Privacy
-- Accessibility
+- recipient nominations
 
 ## Publishing rule
-No eligibility, monetary, legal, insurance, foster-care-system, privacy, application, age-range or service-geography claim is published until it is sourced or approved as current first-party policy.
-
-Acts of Compassion content must also avoid exposing a recipient's private circumstances without appropriate permission.
+No eligibility, amount, legal, insurance, tax-deductibility, direct-payment, address, fundraising-fee, medical-assistance or program-capacity claim is published until current Foundation approval or reliable evidence supports it.
