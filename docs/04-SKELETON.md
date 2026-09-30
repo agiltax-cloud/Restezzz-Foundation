@@ -19,10 +19,11 @@
 5. **Someone in Your Corner** — relational mentorship differentiator
 6. **For Schools & Social Workers** — referral CTA
 7. **Community Outreach** — meals/basic-needs/community activity
-8. **Get Involved** — volunteer, provide a service, partner, fundraise
-9. **Impact / Story** — only substantiated examples
-10. **Donate**
-11. **Contact/footer**
+8. **Acts of Compassion** — accessible, practical ways anyone can help
+9. **Get Involved** — volunteer, provide a service, partner, fundraise
+10. **Impact / Story** — only substantiated examples
+11. **Donate**
+12. **Contact/footer**
 
 ## Proposed hero content direction
 Eyebrow: Rest Ezzz Foundation
@@ -37,6 +38,31 @@ Primary CTA: **Get Support**
 Secondary CTA: **Refer a Young Adult**
 
 This is reconstructed copy for review, not historical language.
+
+## Acts of Compassion homepage section
+
+```text
+┌───────────────────────────────────────────────────────────┐
+│                    ACTS OF COMPASSION                     │
+│                                                           │
+│   Compassion doesn't have to be complicated.              │
+│   A meal. A haircut. A blanket. A skill. A connection.    │
+│   One practical act can help someone move forward.        │
+│                                                           │
+│   [ TAKE AN ACT OF COMPASSION ]                           │
+│   [ SEE CURRENT OPPORTUNITIES ]                           │
+└───────────────────────────────────────────────────────────┘
+```
+
+Possible visual cards:
+- Give Time
+- Give a Skill
+- Give a Meal / Essential
+- Provide a Resource
+- Join an Outreach
+- Business Acts of Compassion
+
+This section should make participation feel immediate and achievable without competing with the primary Get Support journey.
 
 ## Get Support page
 - "You don't have to figure everything out at once."
@@ -70,6 +96,7 @@ Each card answers:
 - boundaries around contact with minors/in-care youth must be confirmed before publishing
 
 ## Community page
+- Acts of Compassion
 - upcoming/recent outreach
 - food/basic-needs activity
 - community partners
