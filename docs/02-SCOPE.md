@@ -1,13 +1,14 @@
 # Plane 2 — Scope
 
 ## Strategic content scope
-The new site should center Rest Ezzz's first-party-described work with young adults transitioning out of foster care, then support community outreach and partner mobilization.
+The new site should center Rest Ezzz's first-party-described work with young adults transitioning out of foster care, then support community outreach, **Acts of Compassion**, and partner mobilization.
 
 ## Must-have functionality
 - editable WordPress/Gutenberg content
 - responsive navigation
 - prominent **Get Support** pathway
 - referral pathway for schools/social workers/community organizations
+- Acts of Compassion landing section/page and CTA
 - Contact
 - Donate
 - accessible forms with privacy notices
@@ -15,7 +16,7 @@ The new site should center Rest Ezzz's first-party-described work with young adu
 - privacy/legal pages
 - keyboard/focus accessibility
 - performant responsive images
-- reusable program, resource and event components
+- reusable program, resource, compassion, partner and event components
 
 ## Primary program content
 ### Transition Support
@@ -37,6 +38,24 @@ The new site should center Rest Ezzz's first-party-described work with young adu
 - outreach to unhoused families and individuals
 - recurring local service events
 
+### Acts of Compassion
+A broad participation layer for practical, community-centered help.
+
+Content may include:
+- current compassion opportunities
+- simple ways to contribute time, goods, skills or services
+- community acts completed through Rest Ezzz
+- business/service-provider participation
+- seasonal or one-time calls to action
+- stories showing compassion translated into practical help
+
+Recommended CTA language:
+- **Take an Act of Compassion**
+- **Join an Act of Compassion**
+- **Put Compassion Into Action**
+
+Final CTA language should be selected during copy/design review.
+
 ### Partner Network
 Potential partner categories explicitly suggested in the founder interview:
 - schools
@@ -56,6 +75,7 @@ Do not make them top-level IA in the rebuilt site unless confirmed.
 P0:
 - Request Support
 - Refer a Young Adult
+- Acts of Compassion interest/action
 - Volunteer / Partner Inquiry
 - Contact
 - Donate
@@ -68,6 +88,7 @@ Conditional after process/privacy review:
 - newsletter
 - donor portal
 - mentor matching
+- public nominations for compassion recipients
 
 ## Content requirements
 - Home
@@ -80,6 +101,7 @@ Conditional after process/privacy review:
 - Housing & Resource Navigation
 - Mentorship
 - Community Outreach
+- Acts of Compassion
 - For Referral Partners
 - Get Involved
 - Partners
@@ -91,3 +113,5 @@ Conditional after process/privacy review:
 
 ## Publishing rule
 No eligibility, monetary, legal, insurance, foster-care-system, privacy, application, age-range or service-geography claim is published until it is sourced or approved as current first-party policy.
+
+Acts of Compassion content must also avoid exposing a recipient's private circumstances without appropriate permission.
