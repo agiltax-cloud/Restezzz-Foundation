@@ -55,3 +55,8 @@ Every production factual claim should map to one of:
 - reliable corroborating source
 
 Current live copy may still be outdated operationally; publishing it again does not remove the need for confirmation where money, eligibility, legal status, insurance, assistance limits or sensitive claims are involved.
+
+
+## Research reference documents
+- `research/FOSTER-TRANSITION-RESEARCH.md` — authoritative California transition-age-youth program context.
+- `research/PUBLIC-SOURCE-RESEARCH.md` — public/partner corroboration and legal-verification cautions.
