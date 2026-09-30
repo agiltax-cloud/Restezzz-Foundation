@@ -11,6 +11,8 @@ This directory is the integrated product blueprint for the Rest Ezzz Foundation 
 - `research/EVIDENCE-REGISTER.md`
 - `research/LIVE-SITE-AUDIT-2026-09-30.md`
 - `research/LIVE-SITE-SOCIAL-EVIDENCE.md`
+- `research/FOSTER-TRANSITION-RESEARCH.md`
+- `research/PUBLIC-SOURCE-RESEARCH.md`
 - `research/live-site-snapshot/`
 - `research/SOURCE-INTERVIEW-2026-09-28.md`
 - `research/FOUNDER-INTERVIEW-DECOMPOSITION.md`
