@@ -1,62 +1,94 @@
 # Plane 5 — Surface
 
-## Rebrand implication
-The first-party founder interview shows that the site's emotional center is **transition, capability, belonging and practical support** — not grief/funeral services.
+## Integrated rebrand direction
+The restored site shows two established emotional territories:
+- comfort during difficult times
+- community uplift / compassion
 
-The visual system should therefore be re-evaluated rather than simply restoring the historical surface.
+The founder interview adds:
+- transition
+- capability
+- independence
+- mentorship
+
+The new surface should combine these into a visual language of **warm practical support and forward movement**.
 
 ## Brand character
-- encouraging
+- compassionate
 - grounded
-- practical
-- youthful without feeling childish
-- credible
-- community-based
 - hopeful
+- practical
+- trustworthy
+- energetic enough for community action
+- youthful without being childish
 - relational
+- locally rooted
 
-## Visual territory
-Avoid:
-- funeral-home aesthetics
-- dark grief imagery
-- bureaucratic/government-program visual language
-- stock photos that make youth look helpless
-- savior-oriented charity imagery
+## Authentic current visual sources
+The current WordPress media library contains 72 items:
+- 22 uploaded in 2024
+- 1 in 2023
+- 2 in 2021
+- 5 in 2017
+- 42 in 2016
 
-Prefer:
-- forward movement / next-step metaphors
-- real environments: banking, work, housing, planning, community
-- authentic community/service imagery with permission
-- visual cues of guidance and confidence
-- warm, contemporary typography and generous whitespace
+A large share of the 2016/2017 assets are Avada Charity demo/template media and should not define the new brand.
 
-## Historical assets
-Known archived assets remain valuable as recovery/reference:
+Likely Rest Ezzz-specific/current assets include:
+- `re_logo.png`
+- `cropped-re_logo.png`
+- Toy Drive Event media
+- World Kindness Carnival flyer
+- 2024 event/community images
+- current donation graphic
+- 2024 funeral/loss imagery
+
+Review actual rights/relevance before migration.
+
+## Historical archived assets
+Historical archive files may still be useful for continuity:
 - re_logo.svg
 - re_logo_white.png
 - re_logo_mobile.png
-- historical hero/section imagery in research/ARCHIVE-INVENTORY.md
+- older Rest Ezzz section imagery
 
-But each should be evaluated against the new positioning before reuse.
+Do not automatically restore them if they conflict with the integrated direction.
 
-## Identity question
-The spoken interview consistently uses "Rest Easy" while the current organizational/domain identity is "Rest Ezzz." The rebrand process should explicitly decide:
-- legal name vs public-facing brand
-- whether "Rest Ezzz" remains the display brand
-- whether pronunciation/tagline needs clarification
-- whether a refreshed mark is needed
+## Visual territory
+Prefer:
+- real Rest Ezzz outreach imagery
+- real community events
+- practical transition moments: planning, work, banking, housing, mentorship
+- hands/helping without "savior" framing
+- forward-motion / next-chapter cues
+- warmth, light, human connection
 
-## Suggested design motifs
-- path / stepping-stones / next chapter
-- open door / horizon
-- supportive connection
-- checklist/roadmap
-- resource network
+Avoid:
+- funeral-home aesthetics as the sitewide identity
+- generic Avada charity stock photography
+- dark grief imagery across unrelated programs
+- helpless-youth imagery
+- bureaucratic/government visual language
+- template/demo assets
 
-Avoid literalizing these into clichés; they are design-system territory, not mandatory logo symbols.
+## Existing language/motif bank
+- Rest on us…
+- Helping hands
+- Uplift the human spirit
+- Make a difference
+- Comfort in difficult times
+- Reach down and lift someone up
+
+## Identity decisions
+Confirm:
+- public-facing spelling: Rest Ezzz vs "Rest Easy" language
+- legal-name presentation
+- logo/wordmark refresh
+- pronunciation treatment if needed
+- whether "Rest on us" becomes a major campaign/brand line
 
 ## Components
-Header, mobile nav, transition-support hero, program cards, step-by-step roadmap, mentor/support callout, referral-partner CTA, community event card, partner/service grid, story/impact block, donate CTA, form, alert/status, footer.
+Header, hero, three-pillar program cards, support-path selector, transition roadmap, family-relief card, Acts of Compassion cards, cause/event card, partner/sponsor grid, story/impact block, social/community gallery, donate CTA, forms, alerts/status, footer.
 
 ## Surface acceptance
-Consistent component states, AA-oriented contrast, focus/hover/active states, responsive images, HTML text instead of text baked into images where practical, and imagery/quotes used only with appropriate consent.
+Consistent states, AA-oriented contrast, visible focus, responsive imagery, authentic content over template media, HTML text instead of text baked into images when practical, and documented consent/rights for identifiable people.
