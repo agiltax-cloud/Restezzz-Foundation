@@ -226,3 +226,36 @@ The live site establishes a broader identity than the founder interview alone:
 5. **Sponsors / Partners / Volunteers / Fundraising** — existing participation mechanisms worth preserving and improving.
 
 The new website should integrate all five into one coherent system rather than choosing between the old site and the new direction.
+
+
+## Current technical / SEO audit
+
+Captured production HTML reports:
+- WordPress **7.1.2**
+- Give **3.20.0**
+- Slider Revolution **6.7.20**
+- active theme path: **Avada**
+
+Plugin asset/routes observed include:
+- Contact Form 7
+- GiveWP
+- Instagram Feed
+- Custom Facebook Feed
+- Custom Twitter Feeds
+- Reviews Feed
+- Slider Revolution
+- Avada Builder namespaces
+
+### Critical SEO/template cleanup
+The current homepage meta description / Open Graph description is still Avada demo copy:
+
+> Create a compelling charity website with Avada & WordPress. Highlight your mission, showcase causes, and inspire donations with custom, engaging designs.
+
+The current Open Graph image points to an old **Avada charity demo logo**.
+
+These are not Rest Ezzz content and must be replaced in the new build.
+
+The current site name returned by WordPress is also misspelled **"Restezzz Froundation"**. Correct to the approved Rest Ezzz Foundation name.
+
+### Migration implication
+Do not carry Avada demo SEO metadata, demo logo, Slider Revolution content, generic demo stock imagery, or unused social-feed plugins into the new OVH build merely because they exist on current production.
