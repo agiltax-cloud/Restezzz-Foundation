@@ -14,7 +14,9 @@ This repository is the source of truth for the rebuilt Rest Ezzz Foundation webs
 WordPress core, the database, `wp-content/uploads`, caches, backups, and secrets are runtime/server concerns and are intentionally not versioned.
 
 ## Server build agent
-Start with `docs/DEPLOYMENT.md` and `docs/IA-JJG.md`.
+Start with **`AGENTS.md`** and **`docs/BUILD-AGENT-HANDOFF.md`**, then read `docs/IA-JJG.md`.
+
+Production target: WordPress on the new OVH VPS behind Cloudflare. The build agent is required to use Cloudflare's **`cf` CLI** for DNS preflight, backup, controlled cutover, verification, and rollback planning.
 
 ## Status
 Foundation scaffold created. Content recovery and theme implementation are in progress.
