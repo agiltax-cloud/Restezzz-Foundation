@@ -2,67 +2,96 @@
 
 ## Content truth
 - [ ] Mission approved
-- [ ] Programs current
-- [ ] Eligibility/process approved
-- [ ] Contact details approved
-- [ ] Donation destination/policy approved
-- [ ] Legal/tax wording verified
-- [ ] Partner/logo permissions checked
-- [ ] No reconstructed statement presented as recovered fact
+- [ ] Vision approved
+- [ ] Transition to Independence scope approved
+- [ ] Family Relief & Loss Support scope approved or unconfirmed items omitted
+- [ ] Community Outreach scope approved
+- [ ] Acts of Compassion opportunities approved
+- [ ] phone confirmed
+- [ ] email confirmed
+- [ ] public address confirmed; directory discrepancy resolved
+- [ ] 501(c)(3)/EIN wording verified
+- [ ] sponsor claims verified
+- [ ] fee-free fundraising claim verified or removed
+- [ ] Zelle/direct-payment information verified or removed
+- [ ] unsupported medical/education claims removed unless confirmed
+- [ ] partner/logo permissions checked
+- [ ] story/photo consent checked
+- [ ] sensitive founder-story content explicitly approved
+- [ ] reconstructed wording not misrepresented as historical quotation
+
+## Live-site migration
+- [ ] current snapshot retained
+- [ ] migration matrix complete
+- [ ] all content classified
+- [ ] Sample Page removed
+- [ ] Avada demo content removed
+- [ ] Leo Vetrov removed
+- [ ] /about-2/ → /about/
+- [ ] /journal/ → /contact/
+- [ ] cause/event redirects complete
+- [ ] blank cause pages resolved
+- [ ] authentic media copied/reviewed
+- [ ] generic template imagery excluded
 
 ## UX
-- [ ] Get Support path complete
-- [ ] Referral Partner path complete
-- [ ] Acts of Compassion CTA/path complete
-- [ ] Donate path complete
-- [ ] Volunteer/Partner paths complete or intentionally omitted
-- [ ] Mobile navigation works
-- [ ] 404/search behavior acceptable
+- [ ] Get Support selector works
+- [ ] Transition path works
+- [ ] Family Relief path works if active
+- [ ] Referral path works
+- [ ] Acts of Compassion works
+- [ ] Donate works
+- [ ] Volunteer/Sponsor/Goods/Services paths work
+- [ ] mobile nav works
+
+## Donation/data
+- [ ] GiveWP migration decision documented
+- [ ] donor records backed up
+- [ ] donation form configured
+- [ ] test donation succeeds
+- [ ] confirmation/failure pages work
+- [ ] donor dashboard works or intentionally retired
+- [ ] receipts/notifications verified
 
 ## Accessibility
-- [ ] Keyboard-only pass
-- [ ] Focus visible
-- [ ] Heading hierarchy
-- [ ] Labels/errors
-- [ ] Contrast
-- [ ] Alt text
-- [ ] Reduced motion
+- [ ] keyboard-only
+- [ ] visible focus
+- [ ] heading hierarchy
+- [ ] labels/errors
+- [ ] contrast
+- [ ] alt text
+- [ ] reduced motion
 
 ## OVH / WordPress
-- [ ] OVH VPS hardened
+- [ ] OVH hardened
 - [ ] WordPress deployed
-- [ ] database persistent/backed up
-- [ ] uploads persistent/backed up
-- [ ] PHP-FPM/web server healthy
+- [ ] DB/uploads persistent + backed up
+- [ ] web/PHP healthy
 - [ ] HTTPS valid on origin
-- [ ] canonical hostnames correct
-- [ ] wp-login responds
-- [ ] wp-json responds
-- [ ] no PHP fatal/critical error
-- [ ] forms deliver successfully
+- [ ] canonical hosts correct
+- [ ] wp-login/wp-json respond
+- [ ] no critical errors
+- [ ] forms deliver
 - [ ] sitemap/robots/canonical correct
 - [ ] redirects correct
-- [ ] performance checked
-- [ ] security/update process defined
+- [ ] performance/security checked
 
 ## Cloudflare CLI / DNS
-- [ ] Cloudflare `cf` CLI installed and version recorded
-- [ ] least-privilege Cloudflare automation credentials supplied outside Git
-- [ ] correct Cloudflare account and `restezzzfoundation.org` zone confirmed
-- [ ] current DNS inventory saved before mutation
-- [ ] apex A record confirmed at legacy `162.0.238.22` before cutover
-- [ ] final OVH IPv4 confirmed from provisioned server
-- [ ] OVH origin tested directly before DNS change
-- [ ] exact `cf` DNS update command/schema inspected
-- [ ] DNS mutation dry-run completed when supported
-- [ ] apex A changed to OVH IPv4
-- [ ] apex remains proxied through Cloudflare
-- [ ] `www` CNAME still points to apex and is proxied
-- [ ] unrelated MX/TXT/autodiscover/email/_domainconnect records unchanged
-- [ ] no untested AAAA record points traffic to OVH
-- [ ] public apex HTTPS smoke test passed
-- [ ] public www HTTPS smoke test passed
-- [ ] public wp-login/wp-json smoke tests passed
-- [ ] stale Cloudflare cache purged if necessary
-- [ ] rollback command/path documented
-- [ ] legacy `162.0.238.22` origin retained until explicit retirement approval
+- [ ] `cf` installed/version recorded
+- [ ] least-privilege credentials outside Git
+- [ ] correct account/zone
+- [ ] DNS inventory saved
+- [ ] exact current apex A captured
+- [ ] OVH IPv4 confirmed
+- [ ] OVH origin tested
+- [ ] mutation command/schema inspected
+- [ ] dry-run when supported
+- [ ] apex changed to OVH
+- [ ] apex proxied
+- [ ] `www` preserved
+- [ ] mail/service DNS unchanged
+- [ ] no broken AAAA
+- [ ] public HTTPS smoke tests pass
+- [ ] cache purged if needed
+- [ ] rollback documented
+- [ ] old production retained until retirement approval
