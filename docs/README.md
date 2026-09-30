@@ -9,6 +9,7 @@ This directory is the product blueprint for the Rest Ezzz Foundation WordPress r
 - research/ARCHIVE-INVENTORY.md
 
 ## JJG Five Planes
+- IA-VISUAL-MAP.md — visual sitemap, user journeys, homepage stack, and WordPress content model
 - 01-STRATEGY.md
 - 02-SCOPE.md
 - 03-STRUCTURE.md
