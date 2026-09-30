@@ -52,3 +52,35 @@ Every factual content object supports:
 - source/approval
 - last_verified
 - current_status
+
+
+## Act of Compassion
+A lightweight, action-oriented content type for community participation.
+
+Fields:
+- title
+- short need/action statement
+- category: time / skill / food / essentials / service / resource / outreach
+- audience or beneficiary group
+- date/status
+- location or service area
+- what is needed
+- how to participate
+- quantity/goal if appropriate
+- partner involved
+- CTA label
+- CTA destination
+- image/media
+- consent/privacy status
+- evidence/source
+- completion/update note
+
+Use cases:
+- "Provide 20 winter blankets"
+- "Barbers needed for a community outreach day"
+- "Sponsor meals for an outreach event"
+- "Donate interview clothing"
+- "Offer a professional skill or resource"
+
+Publishing rule:
+Do not expose an individual's private circumstances or identifying information in a public Act of Compassion unless appropriate consent exists. Prefer needs-based descriptions over personal case details.
