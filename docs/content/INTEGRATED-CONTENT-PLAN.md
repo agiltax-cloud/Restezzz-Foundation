@@ -270,3 +270,30 @@ These examples can become categories and stories after confirming reuse rights a
 6. Do not use broad claims about foster-care systems without reliable sources.
 7. For California foster-transition resource content, ground factual statements in CDSS sources.
 8. Verify the public address and IRS/501(c)(3)/EIN language before launch.
+
+
+## Authoritative research anchors
+
+### California foster-transition context
+Use California Department of Social Services as the factual source for public-program context:
+- Extended Foster Care: https://www.cdss.ca.gov/inforesources/foster-care/extended-foster-care-ab-12
+- Transitional Housing Programs: https://www.cdss.ca.gov/inforesources/foster-care/transitional-housing-programs
+- Independent Living Program: https://www.cdss.ca.gov/inforesources/foster-care/independent-living-program
+- Financial Wellness: https://www.cdss.ca.gov/inforesources/foster-care/financial-wellness
+
+These support educational statements about existing California transition resources. They do **not** define Rest Ezzz eligibility and must not be used to imply Rest Ezzz is a government program.
+
+### Current public corroboration
+- City of Orange 2026 council minutes document recent Rest Ezzz participation in a nonprofit permit lottery.
+- Saturated In His Love publicly lists Rest Ezzz as a partner associated with funeral-expense scholarships and insurance assistance.
+
+See:
+- `research/FOSTER-TRANSITION-RESEARCH.md`
+- `research/PUBLIC-SOURCE-RESEARCH.md`
+
+## Current website technical facts affecting the rebuild
+The restored production site currently uses WordPress + Avada and exposes GiveWP, Contact Form 7, WPForms, Instagram/social-feed and Slider Revolution functionality.
+
+The current homepage SEO description and Open Graph image are still Avada demo content. The rebuild must replace those with Rest Ezzz-specific SEO metadata and imagery.
+
+The new site should preserve data/functionality that matters (especially donation data/forms) without carrying forward unnecessary Avada/demo dependencies.
