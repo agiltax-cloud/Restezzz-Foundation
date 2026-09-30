@@ -2,6 +2,10 @@ name: Scrape live Rest Ezzz site
 
 on:
   workflow_dispatch:
+  pull_request:
+    paths:
+      - '.github/workflows/scrape-live-site.yml'
+      - '.github/scrape-trigger'
   push:
     paths:
       - '.github/workflows/scrape-live-site.yml'
