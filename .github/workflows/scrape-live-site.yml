@@ -1,0 +1,221 @@
+name: Scrape live Rest Ezzz site
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/scrape-live-site.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install scraper dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4 lxml
+
+      - name: Crawl live site and WordPress endpoints
+        shell: bash
+        run: |
+          cat > /tmp/scrape.py <<'PY'
+          import json, os, re, hashlib
+          from urllib.parse import urljoin, urlparse, urldefrag
+          import requests
+          from bs4 import BeautifulSoup
+
+          ROOT = "https://restezzzfoundation.org/"
+          DOMAIN = "restezzzfoundation.org"
+          OUT = "live-site-scrape"
+          os.makedirs(OUT, exist_ok=True)
+          os.makedirs(f"{OUT}/raw", exist_ok=True)
+
+          s = requests.Session()
+          s.headers.update({
+              "User-Agent": "Mozilla/5.0 (compatible; RestEzzzMigrationAudit/1.0; +https://restezzzfoundation.org/)"
+          })
+
+          def save_text(path, text):
+              os.makedirs(os.path.dirname(path), exist_ok=True)
+              with open(path, "w", encoding="utf-8") as f:
+                  f.write(text)
+
+          def get(url, timeout=30):
+              return s.get(url, timeout=timeout, allow_redirects=True)
+
+          endpoints = {
+              "homepage.html": ROOT,
+              "robots.txt": urljoin(ROOT, "robots.txt"),
+              "wp-sitemap.xml": urljoin(ROOT, "wp-sitemap.xml"),
+              "sitemap_index.xml": urljoin(ROOT, "sitemap_index.xml"),
+              "wp-json.json": urljoin(ROOT, "wp-json/"),
+              "wp-pages.json": urljoin(ROOT, "wp-json/wp/v2/pages?per_page=100&_embed"),
+              "wp-posts.json": urljoin(ROOT, "wp-json/wp/v2/posts?per_page=100&_embed"),
+              "wp-media.json": urljoin(ROOT, "wp-json/wp/v2/media?per_page=100"),
+          }
+
+          status = {}
+          endpoint_bodies = {}
+          for name, url in endpoints.items():
+              try:
+                  r = get(url)
+                  status[name] = {
+                      "url": url,
+                      "final_url": r.url,
+                      "status": r.status_code,
+                      "content_type": r.headers.get("content-type"),
+                      "length": len(r.content),
+                  }
+                  endpoint_bodies[name] = r.text
+                  save_text(f"{OUT}/{name}", r.text)
+              except Exception as e:
+                  status[name] = {"url": url, "error": repr(e)}
+
+          links = {ROOT}
+          image_refs = {}
+          social_links = set()
+          external_links = set()
+
+          def normalize(url):
+              url = urldefrag(url)[0]
+              p = urlparse(url)
+              if not p.scheme:
+                  url = urljoin(ROOT, url)
+                  p = urlparse(url)
+              if p.scheme not in ("http","https"):
+                  return None
+              return url
+
+          home_html = endpoint_bodies.get("homepage.html","")
+          if home_html:
+              soup = BeautifulSoup(home_html, "lxml")
+              for a in soup.find_all("a", href=True):
+                  u = normalize(a["href"])
+                  if not u:
+                      continue
+                  host = urlparse(u).netloc.lower().replace("www.","")
+                  if host == DOMAIN:
+                      links.add(u)
+                  else:
+                      external_links.add(u)
+                      if any(x in host for x in ["facebook.com","instagram.com","youtube.com","linkedin.com","tiktok.com","x.com","twitter.com"]):
+                          social_links.add(u)
+              for img in soup.find_all("img"):
+                  src = normalize(img.get("src","")) if img.get("src") else None
+                  if src:
+                      image_refs[src] = {
+                          "alt": img.get("alt",""),
+                          "title": img.get("title",""),
+                          "width": img.get("width"),
+                          "height": img.get("height"),
+                      }
+
+          for name in ("wp-sitemap.xml","sitemap_index.xml"):
+              body = endpoint_bodies.get(name,"")
+              if body:
+                  soup = BeautifulSoup(body, "xml")
+                  for loc in soup.find_all("loc"):
+                      u = normalize(loc.get_text(strip=True))
+                      if u and urlparse(u).netloc.lower().replace("www.","") == DOMAIN:
+                          links.add(u)
+
+          for name in ("wp-pages.json","wp-posts.json"):
+              body = endpoint_bodies.get(name,"")
+              try:
+                  data = json.loads(body) if body else []
+              except Exception:
+                  data = []
+              if isinstance(data, list):
+                  for item in data:
+                      u = item.get("link")
+                      if u:
+                          links.add(u)
+
+          def is_page_candidate(u):
+              p = urlparse(u)
+              path = p.path.lower()
+              if any(path.endswith(ext) for ext in [".png",".jpg",".jpeg",".gif",".webp",".svg",".css",".js",".ico",".xml",".json",".pdf",".zip"]):
+                  return False
+              if any(seg in path for seg in ["/wp-admin","/wp-login","/feed/"]):
+                  return False
+              return True
+
+          links = sorted({u for u in links if u and is_page_candidate(u)})[:80]
+
+          pages = []
+          combined = []
+          for i,u in enumerate(links):
+              try:
+                  r = get(u)
+                  html = r.text
+                  digest = hashlib.sha1(u.encode()).hexdigest()[:12]
+                  save_text(f"{OUT}/raw/{i:03d}-{digest}.html", html)
+                  soup = BeautifulSoup(html, "lxml")
+                  for tag in soup(["script","style","noscript","template"]):
+                      tag.decompose()
+                  title = soup.title.get_text(" ",strip=True) if soup.title else ""
+                  headings = []
+                  for h in soup.find_all(re.compile("^h[1-6]$")):
+                      txt = " ".join(h.get_text(" ",strip=True).split())
+                      if txt:
+                          headings.append({"level":h.name,"text":txt})
+                  text = "\n".join(
+                      line for line in
+                      [" ".join(x.split()) for x in soup.stripped_strings]
+                      if line
+                  )
+                  page_links = []
+                  for a in soup.find_all("a",href=True):
+                      href = normalize(a["href"])
+                      label = " ".join(a.get_text(" ",strip=True).split())
+                      if href:
+                          page_links.append({"label":label,"url":href})
+                  imgs = []
+                  for img in soup.find_all("img"):
+                      src = normalize(img.get("src","")) if img.get("src") else None
+                      if src:
+                          imgs.append({"src":src,"alt":img.get("alt",""),"title":img.get("title","")})
+                  rec = {
+                      "url":u,"final_url":r.url,"status":r.status_code,
+                      "title":title,"headings":headings,"text":text,
+                      "links":page_links,"images":imgs
+                  }
+                  pages.append(rec)
+                  combined.append(f"# {title or u}\n\nSOURCE: {u}\n\n")
+                  for h in headings:
+                      combined.append(f"{'#'*int(h['level'][1])} {h['text']}\n")
+                  combined.append("\n"+text+"\n\n---\n\n")
+              except Exception as e:
+                  pages.append({"url":u,"error":repr(e)})
+
+          save_text(f"{OUT}/pages.json", json.dumps(pages, indent=2, ensure_ascii=False))
+          save_text(f"{OUT}/crawl-status.json", json.dumps(status, indent=2))
+          save_text(f"{OUT}/discovered-urls.txt", "\n".join(links))
+          save_text(f"{OUT}/image-refs.json", json.dumps(image_refs, indent=2, ensure_ascii=False))
+          save_text(f"{OUT}/social-links.txt", "\n".join(sorted(social_links)))
+          save_text(f"{OUT}/external-links.txt", "\n".join(sorted(external_links)))
+          save_text(f"{OUT}/LIVE-SITE-CONTENT.md", "".join(combined))
+
+          print(json.dumps({
+              "pages": len(pages),
+              "urls": links,
+              "status": status,
+              "social_links": sorted(social_links),
+              "images_found": len(image_refs),
+          }, indent=2))
+          PY
+
+          python /tmp/scrape.py
+
+      - name: Upload live-site scrape
+        uses: actions/upload-artifact@v4
+        with:
+          name: restezzz-live-site-scrape
+          path: live-site-scrape/
+          if-no-files-found: error
+          retention-days: 7
