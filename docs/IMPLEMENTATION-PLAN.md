@@ -1,105 +1,111 @@
 # Implementation Plan
 
-## Phase 0 — Evidence & live-site preservation
-- Live-site snapshot is stored at `docs/research/live-site-snapshot/`.
-- Preserve current database, uploads, GiveWP donor data and production origin.
-- Confirm open issues in `research/GAPS-AND-QUESTIONS.md`.
-- Preserve authentic causes/event media.
+## Phase 0 — Preservation
+- preserve current production DB
+- preserve uploads
+- preserve GiveWP donor/payment data
+- preserve current live-site snapshot
+- preserve current DNS state
 
-## Phase 1 — Integrated content design
-- Use `content/INTEGRATED-CONTENT-PLAN.md`.
-- Complete `content/LIVE-SITE-MIGRATION-MATRIX.md`.
-- Approve mission/vision.
-- Confirm active Family Relief/Loss services.
-- Confirm Transition to Independence operating model.
-- Define Acts of Compassion opportunities.
-- Finalize CTAs/page briefs.
+## Phase 1 — Build from locked specifications
+Implementation authority:
+1. `FINAL-WEBSITE-BLUEPRINT.md`
+2. `PAGE-SPECS.md`
+3. `DESIGN-SYSTEM.md`
+4. `FORMS-AND-INTERACTIONS.md`
+5. `IA-JJG.md`
+
+Mission, vision, IA, page set, CTAs, forms and visual system are already decided.
 
 ## Phase 2 — WordPress architecture
-Custom `restezzz` theme, Gutenberg-first, minimal plugin dependency.
-
-Content architecture:
-- Pages
-- Programs / Support Areas
-- Causes & Events
-- Acts of Compassion
-- Partners / Sponsors
-- Stories / Impact
-- Resources / FAQs
+- custom `restezzz` theme
+- Gutenberg-first
+- Pages for core static content
+- structured content for Causes/Events, Acts of Compassion, Partners, Stories/Impact
+- GiveWP retained
+- no Avada dependency
 
 ## Phase 3 — Templates/components
-- header/footer
-- homepage
-- Get Support selector
-- Transition program templates
-- Family Relief template
-- Community Outreach template
-- Acts of Compassion
-- Causes/Event archive + detail
-- Sponsor/Partner
+Build exactly the templates defined in `PAGE-SPECS.md`:
+- home
+- Get Help
+- Refer Someone
+- Our Work
+- three program pages
+- Community hub
+- Acts
+- Events archive/detail
+- Stories archive/detail
+- Partners
 - Get Involved
+- Sponsor & Partner
+- About
+- Founder
+- Transparency
 - Donate
 - Contact
-- legal/utility
+- legal/404/utility
 
-## Phase 4 — Current-content migration
-Classify every current content block as KEEP / ADAPT / MERGE / ARCHIVE / RETIRE.
+## Phase 4 — Content migration
+Apply KEEP / ADAPT / MERGE / ARCHIVE / RETIRE decisions.
 
 Mandatory cleanup:
 - remove Sample Page
 - remove Avada demo content
+- remove Leo Vetrov
 - consolidate duplicate About
-- redirect `/journal/` to Contact
-- preserve canonical event URLs
-- resolve empty cause pages
+- redirect Journal to Contact
+- resolve/redirect old cause pages
+- replace demo SEO/Open Graph data
 
-## Phase 5 — Media migration
-- copy authentic Rest Ezzz uploads
-- review 2024 media individually
-- exclude generic Avada demo assets
-- create alt text
-- document permissions
-- optimize responsive formats
+## Phase 5 — Operational verification
+This phase confirms facts; it does not redesign the UX.
+
+Confirm before public population:
+- eligibility
+- service geography
+- Family Relief service details
+- legal/tax information
+- contact information
+- payment/direct-giving details
+- sponsor benefits
+- photo/story permissions
+
+Unconfirmed claims remain omitted.
 
 ## Phase 6 — Donation/data migration
-Evaluate current GiveWP:
-- form ID 1207
-- donor dashboard
-- confirmation
-- failure page
-- payment gateways
-- donor records
-- receipts/emails
-
-If GiveWP remains, migrate/configure it deliberately. Never treat donor data as Git content.
-Verify Zelle/direct-payment information separately.
+- migrate GiveWP donor history/configuration
+- test payment gateway
+- test receipt
+- test confirmation/failure
+- test donor dashboard
+- back up before migration
 
 ## Phase 7 — QA
-- responsive/device
-- accessibility/keyboard
-- forms
-- donation test
+- responsive
+- WCAG 2.2 AA
+- forms/states
+- donation flow
 - redirects
+- SEO metadata
+- sitemap/canonicals
 - performance
-- sitemap/robots/canonical
-- privacy/analytics
 - security
-- current contact/legal details
+- privacy
 
-## Phase 8 — OVH + Cloudflare cutover
-1. Provision/harden OVH.
-2. Deploy WordPress/theme/database/uploads.
-3. Configure TLS/canonical hosts.
-4. Test OVH origin directly.
-5. Use Cloudflare `cf`.
-6. Snapshot current DNS.
-7. Confirm current apex A immediately before change.
-8. Inspect current `cf` mutation schema and dry-run when supported.
-9. Change only web apex A to validated OVH IPv4, proxied.
-10. Preserve `www` and unrelated mail/service DNS.
-11. Smoke test.
-12. Purge stale cache if needed.
-13. Roll back to exact pre-cutover A value on P0 failure.
+## Phase 8 — OVH + Cloudflare
+1. provision/harden OVH
+2. deploy/migrate
+3. configure TLS
+4. test origin directly
+5. use Cloudflare `cf`
+6. snapshot exact DNS
+7. dry-run mutation when supported
+8. point apex to validated OVH IP
+9. preserve proxy and www
+10. leave mail/service DNS untouched
+11. smoke test
+12. rollback to exact pre-cutover origin on P0 failure
 
-## Phase 9 — Post-launch
-Monitor errors, forms, donations, indexing and performance; maintain backups; retain old production until retirement approval.
+## Phase 9 — Stabilization
+Monitor forms, donations, errors, indexing and performance. Retain old production until explicit retirement approval.
