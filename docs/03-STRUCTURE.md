@@ -1,101 +1,82 @@
 # Plane 3 — Structure
 
+**Status: FINAL**
+
 ## Primary navigation
-**Get Support | Programs | Community | Get Involved | About | Donate**
+```text
+GET HELP | OUR WORK | COMMUNITY | GET INVOLVED | ABOUT | [ DONATE ]
+```
 
-Contact may appear in utility/header/footer.
+Contact appears in the utility area and footer.
 
-## Integrated sitemap
+## Final sitemap
+```text
+HOME
+├── GET HELP                         /get-help/
+│   └── Refer Someone               /get-help/refer-someone/
+├── OUR WORK                         /our-work/
+│   ├── Transition to Independence  /our-work/transition-to-independence/
+│   ├── Family Relief               /our-work/family-relief/
+│   └── Community Outreach          /our-work/community-outreach/
+├── COMMUNITY                        /community/
+│   ├── Acts of Compassion          /community/acts-of-compassion/
+│   ├── Causes & Events             /community/causes-events/
+│   ├── Stories & Impact            /community/stories-impact/
+│   └── Community Partners          /community/partners/
+├── GET INVOLVED                     /get-involved/
+│   └── Sponsor & Partner           /get-involved/sponsor-partner/
+├── ABOUT                            /about/
+│   ├── Founder Story               /about/founder/
+│   └── Transparency                /about/transparency/
+├── DONATE                           /donate/
+└── CONTACT                          /contact/
 
-Home
-- Get Support
-  - Young Adult Transition Support
-  - Family Relief & Loss Support
-  - Community / Emergency Resource Help
-  - How Support Works
-  - Request Support
-  - Refer Someone
-  - FAQ
-- Programs
-  - Transition to Independence
-    - Housing & Resource Navigation
-    - Money & Banking Foundations
-    - Employment & Job Readiness
-    - Entrepreneurship Guidance
-    - Life Skills & Goal Planning
-    - Mentorship
-  - Family Relief & Loss Support
-    - Funeral-Expense Relief*
-    - Insurance / Benefit Navigation*
-    - Financial Relief*
-    - Funeral-Process Navigation*
-  - Community Outreach
-    - Food & Essentials
-    - Clothing / Shoes / Hygiene
-    - Neighborhood Projects
-    - Emergency / Disaster Outreach
-- Community
-  - Acts of Compassion
-  - Causes & Events
-  - Stories & Impact
-  - Community Partners
-- Get Involved
-  - Take an Act of Compassion
-  - Volunteer
-  - Sponsor / Partner
-  - Donate Goods or Services
-  - Fundraise
-  - Vendor Opportunities
-- About
-  - Who We Are
-  - Mission & Vision
-  - Why Rest Ezzz
-  - Founder Story
-  - Values
-  - Transparency / Accountability
-- Donate
-- Contact
-- Privacy
-- Accessibility
-- Donation utility pages as needed
+UTILITY
+├── Privacy                          /privacy/
+├── Accessibility                    /accessibility/
+├── Donor Dashboard
+├── Donation Confirmation
+├── Donation Failed
+└── 404
+```
 
-`*` Active program status must be confirmed.
+## Structural rules
+- No separate FAQ page; FAQ accordions live in context.
+- No separate Volunteer/Goods/Fundraise/Vendor pages; those are sections of Get Involved.
+- No global site search at launch.
+- No blog/journal.
+- Breadcrumbs appear on every interior page except Donate utility pages.
+- Events use one archive + one detail template.
+- Stories use one archive + one detail template.
+- Partner directory is separate from partnership acquisition.
 
 ## Core journeys
+### Help seeker
+Home → Get Help → relevant program context → Request Support
 
-### Young adult
-Home → Get Support → Transition Support → How It Works → Request Support / Talk to Someone
+### Referral
+Home/Get Help → Refer Someone → Submit Referral
 
-### Family in loss/crisis
-Home → Get Support → Family Relief & Loss Support → eligibility/process → Request Support
-
-### Community-resource need
-Home → Get Support → Community / Emergency Help → Contact / Resource Navigation
-
-### Referral partner
-Home → Get Support → Refer Someone → referral information → Submit / Contact
+### Youth transition
+Home → Transition to Independence → Request Support / Refer Someone
 
 ### Compassion participant
-Home → Acts of Compassion → choose a practical action → participate
+Home/Community → Acts of Compassion → Opportunity → Take Action
 
-### Sponsor / service provider
-Home → Get Involved → Sponsor / Partner / Goods / Services → inquiry
+### Event participant
+Community → Causes & Events → Event → Participate
+
+### Partner
+Get Involved → Sponsor & Partner → Start a Partnership
 
 ### Donor
-Home → Impact / Programs → Donate
+Home/Program/Impact → Donate → GiveWP → Confirmation
 
-## Legacy URL mapping baseline
+## Redirect decisions
 - `/about-2/` → `/about/`
 - `/journal/` → `/contact/`
 - `/sponsor/` → `/get-involved/sponsor-partner/`
 - `/causes/` → `/community/causes-events/`
-- Sparkle URLs → one canonical Sparkle event page
-- `/sample-page/` → retire
-- `/author/admin/` → disable/noindex/redirect
-
-## Interaction model
-- Need-based navigation before organizational jargon.
-- Lightweight first inquiry.
-- Human contact visible.
-- Do not pressure support-seekers with donation messaging.
-- Reuse the current site's flexible participation options across Acts of Compassion and events.
+- Sparkle duplicate URLs → one canonical event detail URL
+- `/sample-page/` → 410
+- `/author/admin/` → disabled/noindex
