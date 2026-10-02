@@ -1,142 +1,89 @@
 # Plane 4 — Skeleton
 
-## Header
+**Status: FINAL**
+
+The page-by-page structure is fixed in `PAGE-SPECS.md`. Interaction and form states are fixed in `FORMS-AND-INTERACTIONS.md`.
+
+## Global header
+Desktop:
 - Rest Ezzz logo
-- Get Support
-- Programs
+- Get Help
+- Our Work
 - Community
 - Get Involved
 - About
-- Donate
-- Contact utility
-- equivalent mobile menu
+- Donate button
+- Contact utility link
 
-## Homepage hierarchy
+Mobile:
+- logo
+- Donate action
+- menu trigger
+- accordion subnavigation
 
-1. **Hero**
-   - integrated umbrella message
-   - Get Support
-   - Put Compassion Into Action
+## Homepage
+1. Hero
+2. How We Help
+3. Transition to Independence
+4. Acts of Compassion
+5. Community in Action
+6. Causes & Events
+7. Stories & Impact
+8. Get Involved
+9. Donate
+10. Footer
 
-2. **Rest on Us**
-   - concise explanation of Rest Ezzz as an outreach nonprofit
-   - preserve authentic "Rest on us…" language
+### Hero
+Eyebrow: **Rest on us.**
 
-3. **Three Ways We Help**
-   - Transition to Independence
-   - Family Relief & Loss Support
-   - Community Outreach
-
-4. **Transition Support**
-   - housing/resources
-   - money/banking
-   - work/business
-   - life skills
-   - mentorship
-   - CTA: Get Support / Refer a Young Adult
-
-5. **Acts of Compassion**
-   - meal
-   - clothing/essential
-   - skill/service
-   - volunteer action
-   - connection/resource
-   - CTA: Take an Act of Compassion
-
-6. **Community in Action**
-   - authentic causes/outreach examples
-   - toy drive
-   - food/hygiene
-   - beautification
-   - emergency groceries
-   - fire response
-   - garden project
-
-7. **Causes & Events**
-   - current/archived campaign cards
-
-8. **Partners / Sponsors**
-   - current verified partners and contribution pathways
-
-9. **Stories / Impact**
-   - substantiated + permissioned only
-
-10. **Get Involved**
-   - Volunteer
-   - Sponsor / Partner
-   - Donate Goods
-   - Provide a Service
-   - Fundraise
-   - Vendor opportunities
-
-11. **Donate**
-
-12. **Contact/footer**
-
-## Hero copy territory — reconstructed, approval required
-
-Eyebrow:
-**Rest Ezzz Foundation**
-
-H1:
-**You don't have to face the next chapter alone.**
+H1: **You don't have to face the next chapter alone.**
 
 Support:
-**Practical support, human connection, and a community ready to help — from young adults building independent lives to families and neighborhoods facing difficult moments.**
+**Rest Ezzz helps young people, families, and neighborhoods move through difficult moments with practical support, human connection, and compassionate action.**
 
-Primary CTA: **Get Support**  
-Secondary CTA: **Put Compassion Into Action**
+Primary CTA: **Get Help**  
+Secondary CTA: **Act with Compassion**
 
-Alternative youth-forward H1 remains available on the Transition page:
-**From foster care to independent life — with someone in your corner.**
+## Get Help
+Order:
+1. H1/introduction
+2. four-path support selector
+3. how support works
+4. Request Support form
+5. privacy/non-guarantee message
+6. contextual FAQ
+7. direct contact
 
-## Get Support landing page
-First choice should be by need:
+## Interior-page pattern
+1. breadcrumb
+2. page hero
+3. orientation/summary
+4. primary content modules
+5. process or action section when relevant
+6. related content
+7. single primary CTA
+8. footer
 
-```text
-WHAT KIND OF SUPPORT ARE YOU LOOKING FOR?
+## Cards
+- program card
+- Act of Compassion card
+- event card
+- story card
+- partner card
 
-[ Transitioning From Foster Care ]
-[ Family / Loss Support ]
-[ Community / Emergency Resources ]
-[ I'm Referring Someone ]
-```
+Card fields are fixed in `DESIGN-SYSTEM.md` and content models.
 
-Then explain:
-- what Rest Ezzz may help with
-- how contact/review works
-- what is not guaranteed
-- privacy expectation
-- human contact alternative
+## Forms
+One-column by default, explicit labels, inline errors, error summary, preserved input, success state.
 
-## Acts of Compassion section
+No document uploads at launch.
 
-```text
-ACTS OF COMPASSION
+## Footer
+Link groups:
+- Get Help
+- Our Work
+- Community
+- Get Involved
+- About
 
-A meal.
-A haircut.
-A blanket.
-A skill.
-A resource.
-A connection.
-
-One practical act can help someone move forward.
-
-[ TAKE AN ACT OF COMPASSION ]
-[ SEE CURRENT OPPORTUNITIES ]
-```
-
-## Causes/events
-Do not preserve empty template detail pages. Every public cause card should have:
-- title
-- date/status
-- why it matters
-- what Rest Ezzz did/is doing
-- ways to participate
-- media
-- partners
-- outcome/update
-
-## Responsive/accessibility
-Target WCAG 2.2 AA practices: mobile-first layout, keyboard operation, visible focus, semantic headings/landmarks, descriptive links, form labels/errors, adequate contrast, reduced-motion support and meaningful alt text.
+Plus verified contact, social links, Donate, Privacy, Accessibility and Donor Dashboard if retained.
