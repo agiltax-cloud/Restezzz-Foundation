@@ -1,81 +1,91 @@
 # AGENTS.md — Rest Ezzz Foundation Build Instructions
 
-## Required reading before implementation
-Read these in order:
-1. `docs/content/INTEGRATED-CONTENT-PLAN.md`
-2. `docs/research/LIVE-SITE-AUDIT-2026-09-30.md`
-3. `docs/BUILD-AGENT-HANDOFF.md`
-4. `docs/IA-JJG.md`
-5. `docs/IA-VISUAL-MAP.md`
-6. `docs/01-STRATEGY.md`
-7. `docs/02-SCOPE.md`
-8. `docs/03-STRUCTURE.md`
-9. `docs/04-SKELETON.md`
-10. `docs/05-SURFACE.md`
-11. `docs/content/CONTENT-INVENTORY.md`
-12. `docs/content/LIVE-SITE-MIGRATION-MATRIX.md`
-13. `docs/LAUNCH-CHECKLIST.md`
+## Authority order
+Read and implement in this order:
 
-## Product requirement
-Do **not**:
-- clone the restored live website 1:1
-- discard its authentic content/history
-- revert to a funeral-only site
-- reduce Rest Ezzz to foster-youth support only
-- publish unverified operational claims
+1. `docs/FINAL-WEBSITE-BLUEPRINT.md`
+2. `docs/PAGE-SPECS.md`
+3. `docs/DESIGN-SYSTEM.md`
+4. `docs/FORMS-AND-INTERACTIONS.md`
+5. `docs/IA-JJG.md`
+6. `docs/BUILD-AGENT-HANDOFF.md`
+7. evidence/research documents
 
-Build the **integrated direction**:
-- Transition to Independence
-- Family Relief & Loss Support
-- Community Outreach
-- Acts of Compassion
-- community/sponsor/volunteer/donor resource network
+If older planning language conflicts with the four final specification documents above, the final specifications win.
 
-The founder interview makes foster-youth transition a major strategic priority. The restored live site confirms an established public identity around family-loss relief and broad community outreach. Both must be integrated.
+## Product decision
+Build one integrated Rest Ezzz experience around three service pillars:
 
-## Live-site migration
-The current production site is a first-party source.
+1. Transition to Independence
+2. Family Relief
+3. Community Outreach
 
-Use:
-- `docs/research/live-site-snapshot/`
-- `docs/research/LIVE-SITE-AUDIT-2026-09-30.md`
-- `docs/content/LIVE-SITE-MIGRATION-MATRIX.md`
+**Acts of Compassion is the signature participation model**, not a fourth service program.
 
-Do not migrate:
-- WordPress Sample Page
-- Avada demo content such as Leo Vetrov
+Primary navigation is fixed:
+
+```text
+GET HELP | OUR WORK | COMMUNITY | GET INVOLVED | ABOUT | [ DONATE ]
+```
+
+Do not rename these sections or invent additional top-level navigation.
+
+## Brand decision
+Public name: **Rest Ezzz Foundation**
+
+Brand line: **Rest on us.**
+
+Mission:
+**To uplift the human spirit by helping young people, families, and neighborhoods move through difficult transitions with practical support, compassionate action, and human connection.**
+
+Vision:
+**A community where no one has to face a difficult transition alone.**
+
+## UX decision rule
+The plan contains decisions, not options.
+
+When an operational fact is unverified:
+- keep the approved page and layout
+- omit the unverified claim
+- do not invent copy
+- do not create an alternate UX
+- publish the fact only after Foundation confirmation
+
+## Do not build
+- Avada/page-builder dependency
+- global site search at launch
+- blog/journal
+- newsletter
+- document uploads in help/referral forms
+- a member portal other than GiveWP Donor Dashboard if retained
+- generic demo content or stock charity copy
+
+## Current-site migration
+Preserve:
+- authentic Rest Ezzz copy and imagery
+- causes/events
+- outreach evidence
+- current donation data/history
+- GiveWP records
+- real partner/community content
+
+Retire:
+- Sample Page
+- Leo Vetrov
 - duplicate About page
-- unsupported template claims
-- old content merely because it exists
-
-Preserve and adapt authentic Rest Ezzz language, media, causes, events and participation models.
+- empty author archive
+- Avada demo assets/copy
+- demo SEO metadata
+- unsupported claims
 
 ## Infrastructure requirement
-Production target is WordPress on the new OVH VPS behind Cloudflare.
+Production target: WordPress on OVH VPS behind Cloudflare.
 
-**Mandatory:** use Cloudflare's `cf` CLI for Cloudflare zone/DNS inspection and the final DNS cutover. Do not treat manual dashboard DNS editing as the standard deployment path.
+Mandatory:
+- preserve current production first
+- deploy/test OVH origin before cutover
+- use Cloudflare `cf` CLI for DNS inventory, backup, mutation, verification and rollback
+- keep unrelated mail/service DNS untouched
+- retain the existing production origin until OVH is stable and retirement is explicitly approved
 
-The website cutover must:
-- preserve/snapshot current production before migration
-- validate the OVH origin first
-- snapshot current Cloudflare DNS
-- dry-run the DNS mutation when supported
-- update the apex A record from current production `162.0.238.22` to the provisioned OVH IPv4
-- keep the apex proxied
-- preserve `www` → apex behavior
-- leave MX/TXT/mail/service records untouched unless separately authorized
-- verify public HTTPS after cutover
-- retain `162.0.238.22` as rollback until retirement is explicitly approved
-
-Never commit credentials, Cloudflare API tokens, database secrets or private keys.
-
-## Safety of existing state
-Never overwrite or discard:
-- production database
-- donor/GiveWP data
-- uploads/media
-- server secrets
-- current production origin
-- recovery snapshots
-
-without explicit authorization and tested backups.
+Never commit secrets, donor data, payment credentials, API tokens, database passwords or private keys.
