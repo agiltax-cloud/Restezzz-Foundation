@@ -1,0 +1,51 @@
+name: Analyze Rest Ezzz logo
+
+on:
+  push:
+    paths:
+      - '.github/workflows/analyze-logo.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install requests pillow
+      - name: Analyze current logo colors
+        run: |
+          python - <<'PY'
+          import io, json, requests
+          from PIL import Image
+          url='https://restezzzfoundation.org/wp-content/uploads/2024/10/re_logo.png'
+          r=requests.get(url,timeout=30)
+          r.raise_for_status()
+          im=Image.open(io.BytesIO(r.content)).convert('RGBA')
+          pixels=[]
+          for rr,gg,bb,aa in im.getdata():
+              if aa < 64: continue
+              if rr>245 and gg>245 and bb>245: continue
+              pixels.append((rr,gg,bb))
+          sample=Image.new('RGB',(len(pixels),1))
+          sample.putdata(pixels)
+          q=sample.quantize(colors=8,method=Image.Quantize.MEDIANCUT)
+          palette=q.getpalette()
+          counts=q.getcolors()
+          colors=[]
+          for count,idx in sorted(counts,reverse=True):
+              rgb=tuple(palette[idx*3:idx*3+3])
+              colors.append({'hex':'#%02x%02x%02x'%rgb,'rgb':rgb,'count':count})
+          out={'source':url,'size':im.size,'mode':im.mode,'dominant_nonwhite_colors':colors}
+          print(json.dumps(out,indent=2))
+          open('docs/research/live-site-snapshot/logo-analysis.json','w').write(json.dumps(out,indent=2))
+          PY
+      - name: Commit analysis
+        run: |
+          git config user.name "restezzz-build-agent"
+          git config user.email "actions@github.com"
+          git add docs/research/live-site-snapshot/logo-analysis.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Analyze current Rest Ezzz logo colors"
+          git push
