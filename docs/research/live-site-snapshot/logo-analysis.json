@@ -1,0 +1,82 @@
+{
+  "source": "https://restezzzfoundation.org/wp-content/uploads/2024/10/re_logo.png",
+  "size": [
+    174,
+    84
+  ],
+  "mode": "RGBA",
+  "dominant_nonwhite_colors": [
+    {
+      "hex": "#02a680",
+      "rgb": [
+        2,
+        166,
+        128
+      ],
+      "count": 562
+    },
+    {
+      "hex": "#02a780",
+      "rgb": [
+        2,
+        167,
+        128
+      ],
+      "count": 370
+    },
+    {
+      "hex": "#02a580",
+      "rgb": [
+        2,
+        165,
+        128
+      ],
+      "count": 249
+    },
+    {
+      "hex": "#02ae86",
+      "rgb": [
+        2,
+        174,
+        134
+      ],
+      "count": 130
+    },
+    {
+      "hex": "#01a680",
+      "rgb": [
+        1,
+        166,
+        128
+      ],
+      "count": 123
+    },
+    {
+      "hex": "#02a681",
+      "rgb": [
+        2,
+        166,
+        129
+      ],
+      "count": 108
+    },
+    {
+      "hex": "#03a680",
+      "rgb": [
+        3,
+        166,
+        128
+      ],
+      "count": 94
+    },
+    {
+      "hex": "#02a67f",
+      "rgb": [
+        2,
+        166,
+        127
+      ],
+      "count": 50
+    }
+  ]
+}
