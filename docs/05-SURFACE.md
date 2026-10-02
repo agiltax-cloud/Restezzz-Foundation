@@ -1,17 +1,15 @@
 # Plane 5 — Surface
 
-## Integrated rebrand direction
-The restored site shows two established emotional territories:
-- comfort during difficult times
-- community uplift / compassion
+**Status: FINAL**
 
-The founder interview adds:
-- transition
-- capability
-- independence
-- mentorship
+The production surface is defined by `DESIGN-SYSTEM.md`.
 
-The new surface should combine these into a visual language of **warm practical support and forward movement**.
+## Identity
+Public brand: **Rest Ezzz Foundation**
+
+Brand line: **Rest on us.**
+
+The site does not rebrand the organization as "Rest Easy."
 
 ## Brand character
 - compassionate
@@ -19,76 +17,64 @@ The new surface should combine these into a visual language of **warm practical 
 - hopeful
 - practical
 - trustworthy
-- energetic enough for community action
-- youthful without being childish
-- relational
-- locally rooted
+- community-based
+- forward-moving
 
-## Authentic current visual sources
-The current WordPress media library contains 72 items:
-- 22 uploaded in 2024
-- 1 in 2023
-- 2 in 2021
-- 5 in 2017
-- 42 in 2016
+## Color
+- Rest Ezzz logo green: `#02A680`
+- Primary action green: `#007C60`
+- Deep teal: `#133C38`
+- Ink: `#1E2933`
+- Warm cream: `#F7F5EF`
+- Soft mint: `#E8F6F2`
+- Warm coral accent: `#E56B5D`
+- White: `#FFFFFF`
+- Focus blue: `#0B63CE`
 
-A large share of the 2016/2017 assets are Avada Charity demo/template media and should not define the new brand.
+## Typography
+Headings: **Manrope**  
+Body/UI: **Source Sans 3**
 
-Likely Rest Ezzz-specific/current assets include:
-- `re_logo.png`
-- `cropped-re_logo.png`
-- Toy Drive Event media
-- World Kindness Carnival flyer
-- 2024 event/community images
-- current donation graphic
-- 2024 funeral/loss imagery
+Fonts are self-hosted.
 
-Review actual rights/relevance before migration.
+## Layout
+- max container: 1200px
+- prose: 760px
+- desktop grid: 12 columns
+- tablet: 6 columns
+- mobile: 4 columns
+- breakpoints: 640px / 900px / 1200px
 
-## Historical archived assets
-Historical archive files may still be useful for continuity:
-- re_logo.svg
-- re_logo_white.png
-- re_logo_mobile.png
-- older Rest Ezzz section imagery
+## Shape
+- buttons: 10px radius
+- fields: 8px
+- cards: 16px
+- large media: 24px
 
-Do not automatically restore them if they conflict with the integrated direction.
+## Imagery
+Use:
+1. authentic Rest Ezzz photography
+2. authentic community/event photography
+3. purpose-shot transition/mentorship imagery
+4. stock only when necessary
 
-## Visual territory
-Prefer:
-- real Rest Ezzz outreach imagery
-- real community events
-- practical transition moments: planning, work, banking, housing, mentorship
-- hands/helping without "savior" framing
-- forward-motion / next-chapter cues
-- warmth, light, human connection
+Do not use:
+- Avada demo imagery
+- universal funeral-home aesthetics
+- helpless-beneficiary imagery
+- imagery implying services not provided
 
-Avoid:
-- funeral-home aesthetics as the sitewide identity
-- generic Avada charity stock photography
-- dark grief imagery across unrelated programs
-- helpless-youth imagery
-- bureaucratic/government visual language
-- template/demo assets
+## Motion
+150–200ms subtle transitions only.
+No parallax.
+No autoplay carousel.
+Honor reduced motion.
 
-## Existing language/motif bank
-- Rest on us…
-- Helping hands
-- Uplift the human spirit
-- Make a difference
-- Comfort in difficult times
-- Reach down and lift someone up
+## Accessibility
+WCAG 2.2 AA target.
+Minimum 48px tap targets.
+Visible focus.
+Semantic structure.
+Contrast-safe buttons and text.
 
-## Identity decisions
-Confirm:
-- public-facing spelling: Rest Ezzz vs "Rest Easy" language
-- legal-name presentation
-- logo/wordmark refresh
-- pronunciation treatment if needed
-- whether "Rest on us" becomes a major campaign/brand line
-
-## Components
-Header, hero, three-pillar program cards, support-path selector, transition roadmap, family-relief card, Acts of Compassion cards, cause/event card, partner/sponsor grid, story/impact block, social/community gallery, donate CTA, forms, alerts/status, footer.
-
-## Surface acceptance
-Consistent states, AA-oriented contrast, visible focus, responsive imagery, authentic content over template media, HTML text instead of text baked into images when practical, and documented consent/rights for identifiable people.
+All detailed tokens/states are in `DESIGN-SYSTEM.md`.
