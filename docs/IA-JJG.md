@@ -1,54 +1,104 @@
-# Rest Ezzz — Integrated JJG Five Planes
+# Rest Ezzz — Final JJG Five Planes
 
-## Evidence states
-- **Live first-party published** — current restored website.
-- **First-party current planning** — founder/Foundation direction.
-- **Recovered** — historical/archive Rest Ezzz material.
-- **Corroborated** — reliable independent/public evidence.
-- **Reconstructed** — proposed new UX/copy.
-- **Verify** — not safe to promise publicly yet.
+**Status: DECISIONS LOCKED**
 
-## 1. Strategy
-Rest Ezzz is an outreach nonprofit helping people move through difficult transitions with practical support, human connection, resources and acts of compassion.
+The five planes are complete. Operational facts still awaiting confirmation are publication gates, not UX alternatives.
 
-Integrated pillars:
+---
+
+## Plane 1 — Strategy
+
+### Positioning
+**Rest Ezzz helps people move through difficult transitions with practical support, human connection, and compassionate action.**
+
+### Mission
+**To uplift the human spirit by helping young people, families, and neighborhoods move through difficult transitions with practical support, compassionate action, and human connection.**
+
+### Vision
+**A community where no one has to face a difficult transition alone.**
+
+### Service pillars
 1. Transition to Independence
-2. Family Relief & Loss Support
+2. Family Relief
 3. Community Outreach
-4. Acts of Compassion / participation network
 
-The founder interview makes youth transition a major strategic priority. The current live site establishes longstanding public messaging around loss relief and broad outreach. Neither source should erase the other.
+### Participation model
+**Acts of Compassion**
 
-## 2. Scope
-Core capabilities:
-- Get Support by need
-- youth transition support
-- family/loss support if operationally confirmed
-- community/emergency resource support
-- referrals
+### Primary audiences
+- young adults transitioning from foster care
+- families facing loss or hardship
+- community members needing practical resources
+- referral partners
+- volunteers, sponsors, donors, vendors, businesses and service providers
+
+### Experience principles
+- need first
+- practical before promotional
+- human connection is visible
+- preserve dignity and agency
+- make compassion actionable
+- collect minimal sensitive information
+- publish only supported claims
+- mobile-first and accessible
+
+---
+
+## Plane 2 — Scope
+
+### Launch functionality
+- Get Help
+- Refer Someone
+- Transition to Independence
+- Family Relief
+- Community Outreach
 - Acts of Compassion
 - Causes & Events
-- Partners / Sponsors
-- Volunteer / Goods / Services / Fundraise
+- Stories & Impact
+- Community Partners
+- Get Involved
+- Sponsor & Partner
+- About
+- Founder Story
+- Transparency & Accountability
 - Donate
 - Contact
-- editable WordPress/Gutenberg content
-- accessibility/privacy/SEO
+- Privacy
+- Accessibility
+- GiveWP donation confirmation/failure/dashboard utilities
 
-Current GiveWP donation infrastructure and authentic event/community content should be migrated deliberately.
+### Launch exclusions
+- no blog/journal
+- no newsletter
+- no global search
+- no document uploads
+- no case-status portal
+- no member portal other than retained donor dashboard
+- no Avada dependency
+- no unverified service or financial claims
 
-## 3. Structure
+### Technology
+- WordPress
+- custom `restezzz` theme
+- Gutenberg-first
+- GiveWP retained for donation history/runtime
+- structured content for Acts, Events, Partners and Stories
 
+---
+
+## Plane 3 — Structure
+
+### Primary navigation
+```text
+GET HELP | OUR WORK | COMMUNITY | GET INVOLVED | ABOUT | [ DONATE ]
+```
+
+### Final IA
 ```text
 HOME
-├── GET SUPPORT
-│   ├── Young Adult Transition Support
-│   ├── Family Relief & Loss Support
-│   ├── Community / Emergency Resource Help
-│   ├── How Support Works
-│   ├── Request Support
+├── GET HELP
 │   └── Refer Someone
-├── PROGRAMS
+├── OUR WORK
 │   ├── Transition to Independence
 │   ├── Family Relief & Loss Support
 │   └── Community Outreach
@@ -56,62 +106,93 @@ HOME
 │   ├── Acts of Compassion
 │   ├── Causes & Events
 │   ├── Stories & Impact
-│   └── Partners
+│   └── Community Partners
 ├── GET INVOLVED
-│   ├── Volunteer
-│   ├── Sponsor / Partner
-│   ├── Goods / Services
-│   ├── Fundraise
-│   └── Vendor Opportunities
+│   └── Sponsor & Partner
 ├── ABOUT
+│   ├── Founder Story
+│   └── Transparency & Accountability
 ├── DONATE
 └── CONTACT
 ```
 
-## 4. Skeleton
-Homepage:
+FAQ content is embedded into Get Help and relevant program pages. Volunteer, goods/services, fundraising and vendor participation are sections of Get Involved, not separate pages.
+
+---
+
+## Plane 4 — Skeleton
+
+The complete page anatomy is defined in `PAGE-SPECS.md`.
+
+### Homepage order
 1. Hero
-2. Rest on Us
-3. Three Ways We Help
-4. Transition Support
-5. Acts of Compassion
-6. Community in Action
-7. Causes & Events
-8. Partners / Sponsors
-9. Stories / Impact
-10. Get Involved
-11. Donate
-12. Contact/footer
+2. How We Help
+3. Transition to Independence
+4. Acts of Compassion
+5. Community in Action
+6. Causes & Events
+7. Stories & Impact
+8. Get Involved
+9. Donate
+10. Footer
 
-Persistent primary actions:
-- **Get Support**
-- **Put Compassion Into Action**
-- **Donate** remains prominent but does not interrupt help-seeking flows.
+### Hero
+Eyebrow: **Rest on us.**
 
-## 5. Surface
-Blend:
-- comfort
-- uplift
-- practical support
-- transition
-- hope
-- community action
-- forward movement
+H1: **You don't have to face the next chapter alone.**
 
-Use authentic Rest Ezzz media when rights/consent are clear. Retire generic Avada demo assets and funeral-home styling as the universal brand.
+Primary CTA: **Get Help**  
+Secondary CTA: **Act with Compassion**
 
-## Source precedence for implementation
-1. Current Foundation approvals
-2. Current founder strategy
-3. Current live-site first-party content
-4. Current first-party social evidence
-5. reliable corroborating sources
-6. historical archive
-7. reconstructed recommendations
+### Get Help
+Four paths:
+- transitioning from foster care
+- family/loss support
+- community/emergency resources
+- referring someone
 
-See:
-- `content/INTEGRATED-CONTENT-PLAN.md`
-- `research/LIVE-SITE-AUDIT-2026-09-30.md`
-- `research/LIVE-SITE-SOCIAL-EVIDENCE.md`
-- `research/SOURCE-INTERVIEW-2026-09-28.md`
-- `research/EVIDENCE-REGISTER.md`
+The Request Support form is on the Get Help page.
+
+### Forms
+Final field/state/process decisions are defined in `FORMS-AND-INTERACTIONS.md`.
+
+---
+
+## Plane 5 — Surface
+
+The complete production design system is defined in `DESIGN-SYSTEM.md`.
+
+### Public brand
+**Rest Ezzz Foundation**
+
+### Core color
+Current logo green: **#02A680**
+
+### Primary action color
+**#007C60**
+
+### Dark brand color
+**#133C38**
+
+### Typography
+- headings: Manrope
+- body/UI: Source Sans 3
+
+### Visual character
+warm, practical, hopeful, trustworthy, community-based, forward-moving.
+
+### Imagery
+Authentic Rest Ezzz/community imagery first. No Avada demo imagery, funeral-home styling as a universal identity, or helpless-beneficiary imagery.
+
+### Accessibility
+WCAG 2.2 AA target.
+
+---
+
+## Implementation authority
+1. `FINAL-WEBSITE-BLUEPRINT.md`
+2. `PAGE-SPECS.md`
+3. `DESIGN-SYSTEM.md`
+4. `FORMS-AND-INTERACTIONS.md`
+5. this document
+6. evidence/research
