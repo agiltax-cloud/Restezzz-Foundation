@@ -1,165 +1,149 @@
-# Rest Ezzz — Integrated Visual IA / Content Map
+# Rest Ezzz — Final Visual IA
 
 ```text
-                           REST EZZZ FOUNDATION
-                                  │
-             ┌────────────────────┼────────────────────┐
-             │                    │                    │
-             ▼                    ▼                    ▼
-      TRANSITION TO          FAMILY RELIEF        COMMUNITY OUTREACH
-      INDEPENDENCE           & LOSS SUPPORT       + COMPASSION
-             │                    │                    │
-             └────────────────────┼────────────────────┘
-                                  ▼
-                           RESOURCE NETWORK
-                    sponsors • partners • donors
-                    volunteers • vendors • services
+                         REST EZZZ FOUNDATION
+                                │
+             ┌──────────────────┼──────────────────┐
+             │                  │                  │
+             ▼                  ▼                  ▼
+      TRANSITION TO        FAMILY RELIEF      COMMUNITY OUTREACH
+      INDEPENDENCE          & LOSS SUPPORT
+             │                  │                  │
+             └──────────────────┼──────────────────┘
+                                ▼
+                       ACTS OF COMPASSION
+                 participation across all pillars
+                                │
+                                ▼
+                       COMMUNITY NETWORK
+          partners • sponsors • donors • volunteers • vendors
 ```
 
-## Final high-level sitemap
+## Primary navigation
 
 ```text
-REST EZZZ
+GET HELP | OUR WORK | COMMUNITY | GET INVOLVED | ABOUT | [ DONATE ]
+```
+
+## Sitemap
+
+```text
+HOME
 │
-├── HOME
-├── GET SUPPORT
-│   ├── Young Adult Transition Support
-│   ├── Family Relief & Loss Support
-│   ├── Community / Emergency Resource Help
-│   ├── How Support Works
-│   ├── Request Support
-│   ├── Refer Someone
-│   └── FAQ
-├── PROGRAMS
+├── GET HELP
+│   └── Refer Someone
+│
+├── OUR WORK
 │   ├── Transition to Independence
-│   │   ├── Housing & Resource Navigation
-│   │   ├── Money & Banking Foundations
-│   │   ├── Employment & Job Readiness
-│   │   ├── Entrepreneurship Guidance
-│   │   ├── Life Skills & Goal Planning
-│   │   └── Mentorship
 │   ├── Family Relief & Loss Support
-│   │   ├── Funeral-Expense Relief*
-│   │   ├── Insurance / Benefit Navigation*
-│   │   ├── Financial Relief*
-│   │   └── Funeral-Process Navigation*
 │   └── Community Outreach
-│       ├── Food & Essentials
-│       ├── Clothing / Shoes / Hygiene
-│       ├── Neighborhood Projects
-│       └── Emergency / Disaster Outreach
+│
 ├── COMMUNITY
 │   ├── Acts of Compassion
 │   ├── Causes & Events
 │   ├── Stories & Impact
 │   └── Community Partners
+│
 ├── GET INVOLVED
-│   ├── Take an Act of Compassion
-│   ├── Volunteer
-│   ├── Sponsor / Partner
-│   ├── Donate Goods or Services
-│   ├── Fundraise
-│   └── Vendor Opportunities
+│   └── Sponsor & Partner
+│
 ├── ABOUT
-│   ├── Who We Are
-│   ├── Mission & Vision
-│   ├── Why Rest Ezzz
 │   ├── Founder Story
-│   ├── Values
-│   └── Transparency / Accountability
+│   └── Transparency & Accountability
+│
 ├── DONATE
-├── CONTACT
-├── PRIVACY
-└── ACCESSIBILITY
+└── CONTACT
 ```
 
-`*` Confirm active program status before launch.
-
-## Primary paths
+## User paths
 
 ```text
-HOME
-├── I NEED SUPPORT
-│   ├── Transitioning from Foster Care
-│   ├── Family / Loss Support
-│   └── Community / Emergency Help
-├── I KNOW SOMEONE WHO NEEDS HELP
-│   └── Refer Someone
-└── I WANT TO HELP
-    ├── Take an Act of Compassion
-    ├── Volunteer
-    ├── Sponsor / Partner
-    ├── Give Goods / Services
-    └── Donate
+I NEED HELP
+HOME → GET HELP
+          ├── Transition from Foster Care
+          ├── Family / Loss Support
+          └── Community / Emergency Resources
+                 ↓
+           REQUEST SUPPORT
+
+I'M REFERRING SOMEONE
+HOME / GET HELP → REFER SOMEONE → SUBMIT REFERRAL
+
+I WANT TO HELP
+HOME / COMMUNITY → ACTS OF COMPASSION → TAKE ACTION
+
+I WANT TO VOLUNTEER / GIVE / FUNDRAISE
+HOME → GET INVOLVED → CONDITIONAL FORM
+
+I'M A BUSINESS / ORGANIZATION
+HOME → GET INVOLVED → SPONSOR & PARTNER → START PARTNERSHIP
+
+I WANT TO DONATE
+ANY PAGE → DONATE → GIVEWP → CONFIRMATION
 ```
 
 ## Homepage
 
 ```text
-[ HERO ]
-You don't have to face the next chapter alone.
-[ GET SUPPORT ] [ PUT COMPASSION INTO ACTION ]
+[ REST ON US. ]
+YOU DON'T HAVE TO FACE THE NEXT CHAPTER ALONE.
+[ GET HELP ] [ ACT WITH COMPASSION ]
+
         ↓
-[ REST ON US ]
-Practical support + human connection + community resources
+
+[ HOW WE HELP ]
+Transition to Independence | Family Relief | Community Outreach
+
         ↓
-[ THREE WAYS WE HELP ]
-Transition | Family Relief | Community Outreach
-        ↓
+
 [ TRANSITION TO INDEPENDENCE ]
-Housing | Money | Work | Business | Life Skills | Mentor
+Housing • Money • Work • Business • Life Skills • Mentorship
+
         ↓
+
 [ ACTS OF COMPASSION ]
-Meal | Essential | Skill | Service | Resource | Connection
+Give Time • Give Goods • Give a Skill or Service
+
         ↓
+
 [ COMMUNITY IN ACTION ]
-Food • Hygiene • Toy Drives • Cleanup • Fire Response
+Real Rest Ezzz outreach
+
         ↓
+
 [ CAUSES & EVENTS ]
-Turkey Donations • Sparkle of Love • World Kindness • etc.
+
         ↓
-[ PARTNERS / SPONSORS ]
+
+[ STORIES & IMPACT ]
+
         ↓
-[ STORIES / IMPACT ]
-        ↓
+
 [ GET INVOLVED ]
+Volunteer • Sponsor/Partner • Goods/Services • Fundraise
+
         ↓
+
 [ DONATE ]
+
         ↓
-[ CONTACT / FOOTER ]
+
+[ FOOTER ]
 ```
 
-## Existing-site migration
-
-```text
-HOME                → integrated Home
-ABOUT               → About
-SPONSOR             → Get Involved / Sponsor
-CAUSES              → Community / Causes & Events
-CONTACT ("Journal") → Contact
-DONATE              → Donate
-
-Recovery / Family United / Hope duplicate cards
-                    → verify + merge into Family Relief
-
-Instagram activity  → Community / Acts / Stories
-Sparkle choices     → reusable Get Involved model
-About-2             → 301 → About
-Sample Page         → retire
-Leo Vetrov          → retire demo content
-```
-
-## WordPress content model
+## WordPress model
 
 ```text
 WORDPRESS
 ├── Pages
-├── Programs
-├── Support Areas
-├── Acts of Compassion
 ├── Causes / Events
-├── Partners / Sponsors
-├── Stories / Impact
-├── Resources
-└── FAQs
+├── Acts of Compassion
+├── Community Partners
+└── Stories / Impact
+
+GIVEWP
+├── Donation Form
+├── Donor Dashboard
+├── Confirmation
+└── Failure
 ```
